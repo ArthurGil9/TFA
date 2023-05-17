@@ -5,6 +5,52 @@ body {
   color: $c-text;
 }
 
-.title {
-  color: $c-alt;
+.title{
+  color: #D95D39;
+  font-size: 32px;
+}
+
+.title-header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: "kallisto", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  color: #004F2D;
+
+}
+
+.title--prin{
+  font-family: "kallisto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.title-col{
+  color: #004F2D;
+}
+
+.title-sec{
+  font-family: "kallisto", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.title-tert{
+  font-family: "kallisto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 23px;
+  color: #004F2D;
+}
+
+p{
+  font-family: "forma-djr-micro", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 25px;
 }

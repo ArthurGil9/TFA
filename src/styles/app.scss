@@ -1,2 +1,22 @@
 @import 'utils/variables';
 @import 'components/type';
+@import 'components/images';
+
+
+html, body{
+    margin: 0;
+}
+
+body{
+    background-color: #FCF4DF;
+}
+
+header{
+    background-color: #E7C06A;
+    height: 70px;
+}
+
+footer{
+    background-color: #E7C06A;
+    height: 50px;
+}
