@@ -4,6 +4,11 @@
 @import 'components/burgermenu';
 @import 'components/btn';
 @import 'components/section-besoin';
+@import 'components/swiper';
+@import 'components/section-passe';
+@import 'components/section-futur';
+
+@import '../../node_modules/swiper/swiper-bundle.css';
 
 html, body{
     margin: 0;

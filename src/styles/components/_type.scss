@@ -12,18 +12,21 @@ body {
 
 .title-header{
   margin-top: 0;
+  margin-right: 0;
   margin-bottom: 0;
   font-family: "kallisto", sans-serif;
   font-weight: 800;
   font-style: normal;
   color: #004F2D;
   font-size: 35px;
+ 
 }
 
 .title--prin{
   font-family: "kallisto", sans-serif;
   font-weight: 500;
   font-style: normal;
+  margin-top: 50px;
 }
 
 .title-col{
@@ -34,6 +37,7 @@ body {
   font-family: "kallisto", sans-serif;
   font-weight: 800;
   font-style: normal;
+  margin-top: 15px;
 }
 
 .title-tert{
@@ -41,7 +45,17 @@ body {
   font-weight: 500;
   font-style: normal;
   font-size: 23px;
-  color: #004F2D;
+  
+}
+
+.km{
+  font-family: "kallisto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 18px;
+  color: #E7C06A;
+  margin-left: 30px;
+  margin-top: 25px;
 }
 
 p{
@@ -59,4 +73,9 @@ p{
 .p--intro{
   font-size: 18px;
   line-height: 25px;
+}
+
+.p--audit{
+  margin-top: 15px;
+  margin-bottom: 50px;
 }
