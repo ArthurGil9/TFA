@@ -2,7 +2,8 @@
 @import 'components/type';
 @import 'components/images';
 @import 'components/burgermenu';
-
+@import 'components/btn';
+@import 'components/section-besoin';
 
 html, body{
     margin: 0;
@@ -15,6 +16,10 @@ body{
 header{
     background-color: #E7C06A;
     height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 200;
 }
 
 footer{

@@ -1,26 +1,23 @@
 body {
-  font-family: sans-serif;
-  font-size: $size-text;
-  line-height: 1.5;
-  color: $c-text;
 }
 
 .title{
   color: #D95D39;
   font-size: 32px;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 25px;
+  margin-right: 25px;
 }
 
 .title-header{
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin-top: 0;
   margin-bottom: 0;
   font-family: "kallisto", sans-serif;
   font-weight: 800;
   font-style: normal;
   color: #004F2D;
-
+  font-size: 35px;
 }
 
 .title--prin{
@@ -51,6 +48,15 @@ p{
   font-family: "forma-djr-micro", sans-serif;
   font-weight: 400;
   font-style: normal;
+  font-size: 16px;
+  line-height: 23px;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.p--intro{
   font-size: 18px;
   line-height: 25px;
 }

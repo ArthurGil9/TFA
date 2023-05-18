@@ -42,10 +42,9 @@
 </head>
 <body>
   <header>
-      <h2 class="title title-header">PathMate</h2>
 
       <input type="checkbox" id="checkbox3" class="checkbox3 visuallyHidden  menu__burger">
-      <label for="checkbox3">
+      <label class="label" for="checkbox3">
           <div class="hamburger hamburger3">
               <span class="bar bar1"></span>
               <span class="bar bar2"></span>
@@ -54,64 +53,100 @@
           </div>
       </label>
 
+      <h2 class="title title-header">PathMate</h2>
   </header>
   <main>
 
     <nav class="menu" id="ancre" >
-      <ul class="" id="menu__liste">
-        <li class="menu-deroulant">
-          <a class="menu__1 menu__accueil" href="index.html">Accueil</a>
-        </li>
-        <li class="menu__1"><a class="" href="groupe.html">Le&nbsp;groupe</a></li>
-        <li class="menu__1"><a class=""href="">Case-&nbsp;study</a></li>
-      </ul>
+      <div class="chemin">
+        <ul class="" id="menu__liste">
+
+          <li class="menu-deroulant menu__el"><a class="menu__el menu__accueil" href="">Comprendre</a></li>
+          <li class="menu__el"><a class="menu__el" href="">Ensemble</a></li>
+          <li class="menu__el"><a class="menu__el" href="">Fonctionnalités</a></li>
+          <li class="menu__el"><a class="menu__el" href="">Passé / Futur</a></li>
+        
+        </ul>
+      </div>
     </nav>
 
     <h1 class="title title--prin"><span class="title-col">Ensemble,</span><br> en toute sécurité</h1>
 
-    <p>PathMate servira à connaître l'état des chemins forestiers grâce à la participation des utilisateurs. Vous pourrez signaler les obstacles, les difficultés ou encore l'état du chemin. Vous aiderez ainsi la communauté à éviter les mauvaises surprises et à choisir un itinéraire adapté. L’idée de cette application est née dans le cadre du projet pour notre TFA. Cette landing page servira donc à expliquer le processus de recherche.</p>
+    <p class="p--intro">PathMate servira à connaître l'état des chemins forestiers grâce à la participation des utilisateurs. Vous pourrez signaler les obstacles, les difficultés ou encore l'état du chemin. Vous aiderez ainsi la communauté à éviter les mauvaises surprises et à choisir un itinéraire adapté. L’idée de cette application est née dans le cadre du projet pour notre TFA. Cette landing page servira donc à expliquer le processus de recherche.</p>
 
-    <button>Découvrir</button>
+    <img class="img--arbre" src="assets/images/arbre.jpg" alt="Image d'un sentier bloqué par un arbre">
 
+    <button class="btn--style">Découvrir</button>
+
+
+    <div class="section-besoin">
     <h2 class="title title-sec"> Comprendre les besoins</h2>
     <p>Pour en arriver à cette idée, je me suis rapproché de la communauté pour comprendre leurs besoins et les aider au mieux. Pour celà, je me suis d’abord concentré sur les cyclistes, via différentes interviews et rencontres, notamment en roulant avec eux. J’ai pu rencontrer Arthur, Quentin,  ou encore le club vtt d’Evrehailles. Ces rencontres furent riches en réponses intéressantes pour moi.</p>
 
     <p>Après une mise en commun et une analyse des réponses obtenues, voici les problèmes les plus fréquemment rencontrés par les vététistes : </p>
 
-    <img src="assets/images/privé.jpg" alt="">
-    <p>Chemin bloqué</p>
+    <div class="container">
 
-    <img src="assets/images/cailloux.jpg" alt="">
-    <p>Chemin trop technique</p>
+      <div>
+      <img src="assets/images/privé.jpg" alt="">
+      <p>Chemin bloqué</p>
+      </div>
 
-    <img src="assets/images/arbre.jpg" alt="">
-    <p>Arbre Tombé</p>
+      <div>
+      <img src="assets/images/cailloux.jpg" alt="">
+      <p>Chemin trop technique</p>
+      </div>
 
-    <img src="assets/images/panneau-chasse.jpg" alt="">
-    <p>La chasse</p>
+      <div>
+      <img src="assets/images/arbre.jpg" alt="">
+      <p>Arbre Tombé</p>
+      </div>
 
-    <img src="assets/images/danger.jpg" alt="">
-    <p>Chemin dangereux</p>
+      <div>
+      <img src="assets/images/panneau-chasse.jpg" alt="">
+      <p>La chasse</p>
+      </div>
+      <div>
+      <img src="assets/images/danger.jpg" alt="">
+      <p>Chemin dangereux</p>
+      </div>
 
-    <img src="assets/images/boue.jpg" alt="">
-    <p>État du chemin</p>
-
+      <div>
+      <img src="assets/images/boue.jpg" alt="">
+      <p>État du chemin</p></div>
+    </div>  
     <p>J’ai constaté que certains problèmes n’étaient pas réservés aux vététistes mais aussi à tous utilisateurs de chemins boisés. J’ai donc élargi mon panel d’utilisateurs pour le proposer à tous. </p>
 
-    <img src="assets/images/promeneur.png" alt="">
-    <p>Prommeneurs</p>
 
-    <img src="assets/images/chasseur.png" alt="">
-    <p>Chasseurs</p>
+    <div class="container2">
 
-    <img src="assets/images/cycliste.png" alt="">
-    <p>Cyclistes</p>
+        <div>
+          <img src="assets/images/promeneur.png" alt="">
+          <p>Prommeneurs</p>
+        </div>
 
-    <img src="assets/images/motard-2.png" alt="">
-    <p>Motards</p>
+        <div>
+          <img src="assets/images/chasseur.png" alt="">
+          <p>Chasseurs</p>
+        </div>
 
-    <img src="assets/images/ranger.png" alt="">
-    <p>Garde forestiers</p>
+        <div>
+          <img src="assets/images/cycliste.png" alt="">
+          <p>Cyclistes</p>
+        </div>
+
+        <div>
+          <img src="assets/images/motard-2.png" alt="">
+          <p>Motards</p>
+        </div>
+
+        <div>
+          <img src="assets/images/ranger.png" alt="">
+          <p>Garde forestiers</p>
+        </div>
+    </div>
+  </div>
+
 
     <h2 class="title title-sec">Une sécurité collective</h2>
 
@@ -122,6 +157,8 @@
     <h3 class="title title-tert">Audit</h3>
 
     <p>J’ai remarqué que certaines applications du même principe existaient déjà et sont très populaires mais elles sont réservées aux automobilistes. Voici quelques exemples </p>
+
+    <p>D’autres applications existent aussi pour les randonneurs et cyclistes par exemple, voici leurs utilités et leurs manques  : </p>
 
     <h3 class="title title-tert">Un audit qui confirme</h3>
 
@@ -137,7 +174,7 @@
     <h4>obstacles sur le chemin</h4>
     <p>Si le promeneur rencontre un arbre tombé en travers du chemin, une branche cassée, une pierre qui bloque le passage ou tout autre obstacle.</p>
 
-    <button>Tout découvrir</button>
+    <button class="btn--style">Tout découvrir ➔</button>
 
     <h2 class="title title-sec">Une explication du passé</h2>
 
