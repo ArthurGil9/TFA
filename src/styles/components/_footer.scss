@@ -1,0 +1,61 @@
+footer{
+	background-color: #E7C06A;
+	margin: 0;
+    height: 100px;
+    padding-top: 25px;
+}
+
+.div_reseaux{
+    display: none;
+}
+
+.ul__reseau {
+    display: flex;
+    justify-content: center;
+    padding:0;
+	margin-bottom: 0px;
+    margin-top: 0;
+}
+
+.menu__reseau {
+    list-style: none;
+    padding: 10px;
+    margin: 0 10px;
+}
+
+.svg__reseau:hover {
+	fill: #D95D39;
+    transform: scale(1.05);
+}
+
+.svg__reseau {
+    fill:#004F2D;
+    width: 25px;
+    transform: scale(1);
+    transition: 0.5s;
+}
+
+.credits{
+    color: #004F2D;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+    font-family: "forma-djr-micro", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+}
+
+.logodwm{
+  width: 50px;
+}
+
+.link{
+	color: #004F2D;
+	font-size: 18px;
+	text-decoration: none;
+}
+
+.link:hover{
+	color: #D95D39;
+}

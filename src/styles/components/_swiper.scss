@@ -6,6 +6,12 @@
     overflow: hidden;
 }
 
+.flèche{
+    display: flex;
+    align-items: center;
+    width: 150%;
+}
+
 .swiper-slide{
     max-width: 90%;
     height: 240px;
@@ -77,3 +83,4 @@
         margin-top: 25px;
     }
 }
+

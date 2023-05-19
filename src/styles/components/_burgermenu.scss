@@ -91,33 +91,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
   #menu__liste{
       position: fixed;
       background-color: #004F2D;
@@ -130,7 +103,11 @@
       transition : all .5s cubic-bezier(0.16, 1, 0.3, 1);
       text-align: left;
       list-style-type: none;
-      border-left: 4px solid #E7C06A;
+      padding-left: 50px;
+  }
+
+  .liste{
+    
   }
   
   .menu__el{
@@ -140,8 +117,8 @@
       color: #E7C06A;
       font-family: "kallisto", sans-serif;
       font-weight: 800;
-    font-style: normal;
-          font-size: 32px;
+      font-style: normal;
+      font-size: 32px;
         text-decoration: none;
 
         &:hover{
@@ -155,10 +132,5 @@
   
   .menu--open #menu__liste{
       transform: translateX(-100%);
-  }
-
-  .chemin{
-    border-left: 2px solid #20536E;
-	margin-left: 11px;
-    position: relative;
+      border-left: 4px solid #E7C06A;
   }

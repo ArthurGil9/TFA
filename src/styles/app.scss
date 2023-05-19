@@ -7,6 +7,8 @@
 @import 'components/swiper';
 @import 'components/section-passe';
 @import 'components/section-futur';
+@import 'components/fond';
+@import 'components/footer';
 
 @import '../../node_modules/swiper/swiper-bundle.css';
 
@@ -27,7 +29,3 @@ header{
     z-index: 200;
 }
 
-footer{
-    background-color: #E7C06A;
-    height: 50px;
-}
