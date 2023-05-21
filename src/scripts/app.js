@@ -7,6 +7,7 @@ const menu = document.querySelector('.menu');
 
 menuBurger.addEventListener('click', function(){
     menu.classList.toggle("menu--open");
+   
 }
 );
 
@@ -21,10 +22,12 @@ function solutionA(){
  }
  document.addEventListener('DOMContentLoaded',function(){
    document.getElementById("ancre").addEventListener("click",solutionA); 
- }); 
+ });
 
  
 const swiper = new Swiper('.swiper-container');
+
+
 
 
 
