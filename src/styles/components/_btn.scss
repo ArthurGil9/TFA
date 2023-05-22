@@ -14,10 +14,12 @@
     border: none;
     border-radius: 30px;
     margin-bottom: 50px;
+    cursor:pointer;
 
     &:hover{
         transform: scale(1.1);
 		transition: 0.5s;
+        
     }
 }
 
