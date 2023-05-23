@@ -147,4 +147,16 @@
  
 
 
-  
+  @media (min-width: 1024px){
+    .hamburger .bar {
+        
+        width: 30px;
+        height: 4px;
+        background-color: #E7C06A;
+        display: block;
+        border-radius: 4px;
+        transition: all 0.4s ease-in-out;
+        position: absolute; 
+    }
+    
+  }

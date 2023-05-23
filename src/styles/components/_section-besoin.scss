@@ -159,6 +159,8 @@
     margin-left: 75px;
     margin-right: 75px;
     grid-template-columns: repeat(6, 1fr);
+    margin-bottom: 0;
+    padding-bottom: 75px;
 
   }
 
@@ -180,5 +182,9 @@
   }
 
 
+  .section-besoin{
+    background-size: 105%;
+    background-position: -80px 20px;
+}
 
 }

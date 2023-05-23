@@ -10,6 +10,7 @@
 @import 'components/fond';
 @import 'components/footer';
 @import 'components/page-fonc';
+@import 'components/grille';
 
 @import '../../node_modules/swiper/swiper-bundle.css';
 
@@ -30,3 +31,22 @@ header{
     z-index: 200;
 }
 
+
+@media (min-width: 1024px){
+    header{
+    position: absolute;
+    top: 500px;
+    float: left;
+    margin: 0;
+    left: -100px;
+    background-color: #E7C06A;
+    height: 70px;
+    transform: rotate(-90deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 200;
+    
+
+}
+}

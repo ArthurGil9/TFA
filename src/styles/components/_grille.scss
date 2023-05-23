@@ -1,0 +1,25 @@
+
+
+@media (min-width: 1024px){
+.grid1{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+    margin-left: 150px;
+    height: 100%;
+}
+
+.contenaire .grid1-2{
+    grid-column: 1 / 2;
+
+  }
+
+  .contenaire .btn1{
+    grid-column: 1 / 2;
+  }
+  
+  .contenaire img {
+    grid-column: 2 / 3;
+  }
+
+}
