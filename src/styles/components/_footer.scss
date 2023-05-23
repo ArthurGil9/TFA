@@ -59,3 +59,22 @@ footer{
 .link:hover{
 	color: #D95D39;
 }
+
+
+@media (min-width: 600px){
+    footer{
+        height: 125px;
+    }
+
+    .svg__reseau {
+        width: 40px;
+    }
+
+    .credits{
+      margin-top: 15px;
+      font-size: 18px;
+    }
+
+
+
+}

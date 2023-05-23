@@ -56,3 +56,38 @@
 .p-fonc2{
     padding-bottom: 75px;
 }
+
+
+@media (min-width: 600px){
+    .fonc-logo{
+        width: 30%;
+        height: 180px;
+        margin-top: 25px;
+     }
+
+     .h4-fonc{
+        margin-top: 25px;
+    }
+
+    .swiper-container{
+        .swiper-fonc{
+            height: 450px;
+            
+            p{
+                margin-left: 75px;
+                margin-right: 75px;
+            }
+        }
+    }
+}
+
+
+@media (min-width: 800px){
+    .swiper-container{
+        .swiper-fonc{
+            max-width: 75%;
+            margin-inline-start: 12.5%;
+            margin-inline-end: 12.5%;
+        }
+    }
+}

@@ -4,11 +4,13 @@
     display: block; 
     margin-left: auto;
     margin-right: auto;
+    width:195.991px;
+    height:202.197px;
 }
 
 .p-futur{
     margin-top: 15px;
-    margin-bottom: 75px;
+    padding-bottom: 75px;
 }
 
 .guillemet{
@@ -16,3 +18,20 @@
     color: #D95D39;
 }
 
+@media (min-width: 600px){
+    .guillemet{
+        font-size: 35px;
+    }
+
+    .p-futur{
+        margin-top: 15px;
+        padding-bottom: 100px;
+    }
+
+}
+
+@media (min-width: 800px){
+    .div-futur{
+        margin-top: 100px;
+    }
+}

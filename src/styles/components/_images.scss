@@ -13,3 +13,17 @@ img{
   margin-bottom: 50px;
   display: block;
 }
+
+@media (min-width: 600px){
+  .img--arbre{
+    width: 500px;
+    height: 300px;
+  }
+}
+
+@media (min-width: 800px){
+  .img--arbre{
+    width: 700px;
+    height: 400px;
+  }
+}

@@ -33,3 +33,25 @@
     background-size: 100%;
     background-position:  -25px 100px;
 }
+
+
+@media (min-width: 600px){
+    .div-futur{
+        background-position:  300px 450px;
+    }
+
+    .fond-audit{
+        background-size: 30%;
+        background-position:  -100px -50px;
+    }
+
+    .fond-fonc2{
+        background-position:  -25px 0px;
+    }
+
+    .fond-fonc1{
+        background-size: 40%;
+        background-position:  600px 0px;
+    }
+
+}
