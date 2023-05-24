@@ -60,34 +60,40 @@
 
 @media (min-width: 600px){
     .fonc-logo{
-        width: 30%;
+        width: 35%;
         height: 180px;
-        margin-top: 25px;
+        margin-top: 0px;
      }
 
      .h4-fonc{
-        margin-top: 25px;
+        margin-top: 0px;
     }
 
     .swiper-container{
         .swiper-fonc{
-            height: 450px;
+            height: 500px;
+            margin-inline-start: 2%;
+            margin-inline-end: 2%;
             
             p{
-                margin-left: 75px;
-                margin-right: 75px;
+                margin-left: 25px;
+                margin-right: 25px;
             }
         }
+
+        
     }
+
 }
 
 
 @media (min-width: 800px){
     .swiper-container{
         .swiper-fonc{
-            max-width: 75%;
-            margin-inline-start: 12.5%;
-            margin-inline-end: 12.5%;
+            width: 50%;
+            margin-inline-start: 5%;
+            margin-inline-end: 5%;
+            
         }
     }
 }

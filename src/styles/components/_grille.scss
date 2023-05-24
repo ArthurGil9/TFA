@@ -3,9 +3,10 @@
 @media (min-width: 1024px){
 .grid1{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
     grid-gap: 15px;
-    margin-left: 150px;
+    margin-left: 200px;
     height: 100%;
 }
 
@@ -16,6 +17,8 @@
 
   .contenaire .btn1{
     grid-column: 1 / 2;
+    grid-row:  1 / 2;
+    
   }
   
   .contenaire img {

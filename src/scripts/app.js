@@ -2,7 +2,9 @@
 import { Swiper } from 'swiper';
 
 
-const menuBurger = document.querySelector('.menu__burger');
+
+
+/*const menuBurger = document.querySelector('.menu__burger');
 const menu = document.querySelector('.menu');
 
 menuBurger.addEventListener('click', function(){
@@ -22,10 +24,44 @@ function solutionA(){
  }
  document.addEventListener('DOMContentLoaded',function(){
    document.getElementById("ancre").addEventListener("click",solutionA); 
- });
+ });*/
 
- 
-const swiper = new Swiper('.swiper-container');
+
+var BurgOpenElement = document.querySelector(".burger__close");
+
+var BurgElement = document.querySelector(".burger__lines");
+
+var BurgNav = document.querySelector(".nav__menu");
+
+BurgElement.addEventListener("click", Menuburger);
+
+BurgNav.addEventListener("click", Menuburger);
+
+
+
+
+function Menuburger() {
+
+  BurgOpenElement.classList.toggle("burger__close");
+
+  BurgElement.classList.toggle("burger__lines__croix");
+
+}
+
+
+const swiper = new Swiper('.swiper-container', {
+  slidesPerView: 1,
+
+  breakpoints: {
+
+    600: {
+      slidesPerView: 2,
+
+    },
+  }
+});
+
+
 
 
 

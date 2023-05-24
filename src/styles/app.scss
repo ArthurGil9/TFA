@@ -14,15 +14,16 @@
 
 @import '../../node_modules/swiper/swiper-bundle.css';
 
-html, body{
+html,
+body {
     margin: 0;
 }
 
-body{
+body {
     background-color: #FCF4DF;
 }
 
-header{
+header {
     background-color: #E7C06A;
     height: 70px;
     display: flex;
@@ -32,21 +33,36 @@ header{
 }
 
 
-@media (min-width: 1024px){
-    header{
-    position: absolute;
-    top: 500px;
-    float: left;
-    margin: 0;
-    left: -100px;
-    background-color: #E7C06A;
-    height: 70px;
-    transform: rotate(-90deg);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 200;
-    
+@media (min-width: 1024px) {
+    header {
 
-}
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        margin: 0;
+        background-color: #004F2D;
+        height: 100%;
+        max-width: 150px;
+        z-index: 200;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border-bottom-right-radius: 200px;
+        margin-bottom: 75px;
+        justify-items: center;
+
+    }
+
+    .mini-logo {
+        top: 200px;
+        left: 50px;
+        width: fit-content;
+        z-index: 200;
+
+
+        path {
+            stroke: #E7C06A;
+        }
+    }
 }

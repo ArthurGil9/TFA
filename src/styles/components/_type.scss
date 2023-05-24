@@ -1,17 +1,16 @@
-body {
-}
+body {}
 
-.title{
+.title {
   color: #D95D39;
   font-size: 32px;
   margin-left: 30px;
   margin-right: 30px;
   margin-top: 25px;
   margin-right: 25px;
-  
+
 }
 
-.title-header{
+.title-header {
   margin-top: 0;
   margin-right: 0;
   margin-bottom: 0;
@@ -20,36 +19,36 @@ body {
   font-style: normal;
   color: #004F2D;
   font-size: 35px;
- 
+
 }
 
-.title--prin{
+.title--prin {
   font-family: "kallisto", sans-serif;
   font-weight: 500;
   font-style: normal;
   margin-top: 50px;
 }
 
-.title-col{
+.title-col {
   color: #004F2D;
 }
 
-.title-sec{
+.title-sec {
   font-family: "kallisto", sans-serif;
   font-weight: 800;
   font-style: normal;
   margin-top: 15px;
 }
 
-.title-tert{
+.title-tert {
   font-family: "kallisto", sans-serif;
   font-weight: 500;
   font-style: normal;
   font-size: 23px;
-  
+
 }
 
-.km{
+.km {
   font-family: "kallisto", sans-serif;
   font-weight: 500;
   font-style: normal;
@@ -59,7 +58,7 @@ body {
   margin-top: 25px;
 }
 
-p{
+p {
   font-family: "forma-djr-micro", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -71,105 +70,113 @@ p{
   margin-bottom: 0;
 }
 
-.p--intro{
+.p--intro {
   font-size: 18px;
   line-height: 25px;
 }
 
-.title-audit{
+.title-audit {
   margin-bottom: 0;
 }
 
-.p--audit{
+.p--audit {
   margin-top: 15px;
   padding-bottom: 50px;
 }
 
-a{
+a {
   text-decoration: none;
   color: white;
 }
 
 
-@media (min-width: 600px){
+@media (min-width: 600px) {
 
-  .title{
+  .title {
     font-size: 36px;
   }
 
-  .title--prin{
+  .title--prin {
     margin-left: 50px;
     margin-right: 50px;
     margin-top: 75px;
     font-size: 51px;
   }
 
-  .title-sec{
+  .title-sec {
     margin-left: 50px;
     margin-right: 50px;
   }
 
-  .title-tert{
+  .title-tert {
     margin-left: 50px;
     margin-right: 50px;
     font-size: 25px;
   }
 
-  p{
+  p {
     font-size: 18px;
     margin-left: 50px;
     margin-right: 50px;
   }
 
-  .km{
+  .km {
     margin-left: 50px;
   }
 
-  .p--audit{
+  .p--audit {
     padding-bottom: 75px;
   }
 }
 
 
-@media (min-width: 800px){
+@media (min-width: 800px) {
 
 
-  .title--prin{
+  .title--prin {
     margin-left: 75px;
     margin-right: 75px;
     margin-top: 75px;
   }
 
-  .title-sec{
+  .title-sec {
     margin-left: 75px;
     margin-right: 75px;
   }
 
-  .title-tert{
+  .title-tert {
     margin-left: 75px;
     margin-right: 75px;
   }
 
-  p{
+  p {
     margin-left: 75px;
     margin-right: 150px;
   }
 
-  .km{
+  .km {
     margin-left: 75px;
   }
 
 }
 
 
-@media (min-width: 1024px){
-  .p--intro{
+@media (min-width: 1024px) {
+  .p--intro {
     margin: 15px;
   }
 
-  .title--prin{
+  .title--prin {
     margin-left: 0px;
     margin-right: 0px;
   }
-}
 
+  .title-header {
+    color: #E7C06A;
+    transform: rotate(-90deg);
+    font-size: 100px;
+    background-color: transparent;
+    display: flex;
+    justify-items: center;
+  }
+}
