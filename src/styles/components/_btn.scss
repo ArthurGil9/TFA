@@ -1,5 +1,5 @@
-.btn--style{
-    font-family: kallisto,sans-serif;
+.btn--style {
+    font-family: kallisto, sans-serif;
     font-weight: 500;
     font-style: normal;
     font-size: 26px;
@@ -14,29 +14,32 @@
     border: none;
     border-radius: 30px;
     margin-bottom: 50px;
-    cursor:pointer;
+    cursor: pointer;
 
-    &:hover{
+    &:hover {
         transform: scale(1.1);
-		transition: 0.5s;
-        
+        transition: 0.5s;
+
     }
 }
 
-.btn--p2{
+.btn--p2 {
     margin-bottom: 75px;
 }
 
-.btn1{
+.btn1 {
     display: none;
 }
 
-@media (min-width: 600px){
-    .btn1{
+@media (min-width: 600px) {
+    .btn1 {
         display: block;
+        /*position: absolute;
+        top: 75%;
+        left: 25%;*/
     }
 
-    .btn--style{
+    .btn--style {
         font-size: 36px;
         padding: 15px;
         padding-left: 40px;
@@ -44,8 +47,8 @@
         border: none;
         border-radius: 40px;
         margin-bottom: 75px;
-        cursor:pointer;
-        
-   
+        cursor: pointer;
+
+
     }
 }

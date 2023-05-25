@@ -11,6 +11,7 @@
 @import 'components/footer';
 @import 'components/page-fonc';
 @import 'components/grille';
+@import 'components/section-fonc';
 
 @import '../../node_modules/swiper/swiper-bundle.css';
 
@@ -34,6 +35,14 @@ header {
 
 
 @media (min-width: 1024px) {
+
+    .body {
+        margin-left: 25px;
+        border-left: 3px solid #E7C06A;
+    }
+
+
+
     header {
 
         position: absolute;

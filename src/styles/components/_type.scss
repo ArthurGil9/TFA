@@ -164,10 +164,11 @@ a {
 @media (min-width: 1024px) {
   .p--intro {
     margin: 15px;
+    font-size: 22px;
   }
 
   .title--prin {
-    margin-left: 0px;
+    margin-left: 15px;
     margin-right: 0px;
   }
 
@@ -178,5 +179,29 @@ a {
     background-color: transparent;
     display: flex;
     justify-items: center;
+  }
+
+  .title-sec {
+    margin-left: 50px;
+    margin-right: 75px;
+  }
+
+  .title-tert {
+    margin-left: 50px;
+    margin-right: 75px;
+  }
+
+  p {
+    margin-left: 50px;
+    margin-right: 150px;
+    line-height: 30px;
+  }
+
+  .km {
+    margin-left: 25px;
+
+    ::before {
+      content: "◉";
+    }
   }
 }

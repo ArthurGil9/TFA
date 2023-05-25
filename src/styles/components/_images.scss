@@ -1,9 +1,9 @@
-img{
-    width: 200px;
-    height: 200px;
-  }
+img {
+  width: 200px;
+  height: 200px;
+}
 
-.img--arbre{
+.img--arbre {
   width: 350px;
   height: 210px;
   margin-left: auto;
@@ -14,25 +14,25 @@ img{
   display: block;
 }
 
-@media (min-width: 600px){
-  .img--arbre{
+@media (min-width: 600px) {
+  .img--arbre {
     width: 500px;
     height: 300px;
   }
 }
 
-@media (min-width: 800px){
-  .img--arbre{
+@media (min-width: 800px) {
+  .img--arbre {
     width: 700px;
     height: 400px;
   }
 }
 
-@media (min-width: 1024px){
-  .img--arbre{
-  border-radius: 0px;
-  width: 100%;
-  height: 100%;
-  margin: 0;
+@media (min-width: 1024px) {
+  .img--arbre {
+    border-radius: 0px;
+    width: 100%;
+    height: 100%;
+    margin: 0;
   }
 }

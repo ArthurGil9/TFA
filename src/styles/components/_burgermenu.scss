@@ -156,13 +156,21 @@
         font-style: normal;
         font-size: 50px;
         width: 100%;
-
         margin-top: 0px;
         background-color: #004F2D;
         padding: 0;
         transform: translateX(0);
         transition: transform 1s ease-in-out;
         border-bottom-right-radius: 200px;
+
+        :hover {
+
+            letter-spacing: 5px;
+
+            ::before {
+                content: "➜";
+            }
+        }
     }
 
 
@@ -191,6 +199,10 @@
 
     .nav__menu__el {
         margin-top: 50px;
+
+        :hover {
+            color: #D95D39;
+        }
     }
 
 
