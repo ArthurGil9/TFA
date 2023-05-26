@@ -48,3 +48,21 @@
 
 
 }
+
+@media (min-width: 1400px) {
+
+    .section-fonc {
+        padding-left: 100px;
+        padding-right: 100px;
+
+        .title-sec {
+            margin-top: 25px;
+
+        }
+
+        .p-fonc {
+            margin-right: 75px;
+        }
+
+    }
+}

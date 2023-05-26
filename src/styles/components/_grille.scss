@@ -2,11 +2,10 @@
   .grid-accueil {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 2fr 1fr;
     grid-gap: 15px;
     margin-left: 150px;
     max-height: 100%;
-    
+
   }
 
   .contenaire .grid-accueil-2 {

@@ -1,5 +1,3 @@
-body {}
-
 .title {
   color: #D95D39;
   font-size: 32px;
@@ -203,5 +201,50 @@ a {
     ::before {
       content: "◉";
     }
+  }
+}
+
+
+
+@media (min-width: 1400px) {
+  .p--intro {
+    margin: 15px;
+    font-size: 25px;
+    line-height: 1.5;
+
+  }
+
+  .title--prin {
+    margin-left: 15px;
+    margin-right: 0px;
+  }
+
+  .title-header {
+    color: #E7C06A;
+    transform: rotate(-90deg);
+    font-size: 100px;
+    background-color: transparent;
+    display: flex;
+    justify-items: center;
+  }
+
+  .title-sec {
+    margin-left: 50px;
+    margin-right: 75px;
+  }
+
+  .title-tert {
+    margin-left: 50px;
+    margin-right: 75px;
+  }
+
+  p {
+    margin-left: 50px;
+    margin-right: 150px;
+    line-height: 30px;
+  }
+
+  .km {
+    margin-left: 25px;
   }
 }

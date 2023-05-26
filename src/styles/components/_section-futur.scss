@@ -1,37 +1,80 @@
-.logoPM{
+.logoPM {
     margin-top: 50px;
     margin-bottom: 50px;
-    display: block; 
+    display: block;
     margin-left: auto;
     margin-right: auto;
-    width:195.991px;
-    height:202.197px;
+    width: 195.991px;
+    height: 202.197px;
 }
 
-.p-futur{
+.p-futur {
     margin-top: 15px;
     padding-bottom: 75px;
 }
 
-.guillemet{
+.guillemet {
     font-size: 25px;
     color: #D95D39;
 }
 
-@media (min-width: 600px){
-    .guillemet{
+.div-futur {
+    padding-top: 50px;
+}
+
+@media (min-width: 600px) {
+    .guillemet {
         font-size: 35px;
     }
 
-    .p-futur{
+    .p-futur {
         margin-top: 15px;
         padding-bottom: 100px;
     }
 
 }
 
-@media (min-width: 800px){
-    .div-futur{
+@media (min-width: 800px) {
+    .div-futur {
         margin-top: 100px;
     }
+}
+
+@media (min-width: 1024px) {
+    .div-futur-2 {
+        display: flex;
+        justify-content: space-around;
+
+        p {
+            max-width: 600px;
+        }
+
+        .logoPM {
+            path {
+                width: 250px;
+                height: 250px;
+            }
+        }
+    }
+
+    .div-futur3 {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 600px;
+        margin-top: 75px;
+
+        p {
+            margin: 0;
+
+            .guillemet {
+                font-size: 150px;
+                padding-top: 100px;
+                text-indent: 10;
+            }
+        }
+    }
+
+
+
 }

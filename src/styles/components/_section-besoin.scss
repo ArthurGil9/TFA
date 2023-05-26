@@ -2,7 +2,7 @@
   background-image: url('../assets/images/velofond.svg');
   background-repeat: no-repeat;
   background-size: 130%;
-  background-position: -80px 70px;
+  background-position: -80px 200px;
 }
 
 
@@ -204,7 +204,7 @@
 @media (min-width: 1024px) {
 
   .section-besoin {
-    margin-top: 25px;
+    margin-top: 175px;
   }
 
   .grid-besoin {
@@ -293,5 +293,19 @@
     grid-column: 2 / 4;
   }
 
-  
+
+}
+
+
+@media (min-width: 1400px) {
+
+  .section-besoin {
+    margin-top: 150px;
+  }
+
+  .pin {
+    padding-right: 100px;
+  }
+
+
 }

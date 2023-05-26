@@ -33,12 +33,31 @@ header {
     z-index: 200;
 }
 
+.velo-vert {
+    display: none;
+}
+
 
 @media (min-width: 1024px) {
 
     .body {
         margin-left: 25px;
         border-left: 3px solid #E7C06A;
+
+
+    }
+
+    .velo-vert {
+        display: block;
+        position: absolute;
+        position: fixed;
+        width: 100px;
+        height: 100px;
+        top: 600px;
+        left: 10px;
+        z-index: 50;
+        opacity: 50%;
+
     }
 
 
@@ -75,3 +94,5 @@ header {
         }
     }
 }
+
+@media (min-width: 1400px) {}
