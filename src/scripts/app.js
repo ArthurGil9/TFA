@@ -19,8 +19,6 @@ BurgElement.addEventListener("click", Menuburger);
 BurgNav.addEventListener("click", Menuburger);
 
 
-
-
 function Menuburger() {
 
   BurgOpenElement.classList.toggle("burger__close");
@@ -28,6 +26,39 @@ function Menuburger() {
   BurgElement.classList.toggle("burger__lines__croix");
 
 }
+
+
+function showPopup() {
+  var popup = document.getElementById("cookiePopup");
+  popup.style.display = "block";
+}
+
+// Attendez 3 secondes avant d'afficher le pop-up
+setTimeout(showPopup, 1500);
+
+// Récupérer les références des boutons
+var acceptBtn = document.getElementById("acceptBtn");
+var rejectBtn = document.getElementById("rejectBtn");
+
+// Ajouter des écouteurs d'événements aux boutons
+acceptBtn.addEventListener("click", acceptCookies);
+rejectBtn.addEventListener("click", rejectCookies);
+
+function acceptCookies() {
+  document.getElementById("cookiePopup").style.display = "none";
+  // Ajoutez ici votre code pour enregistrer la préférence de l'utilisateur (par exemple, en utilisant des cookies)
+  console.log("Cookies acceptés !");
+}
+
+function rejectCookies() {
+  document.getElementById("cookiePopup").style.display = "none";
+  // Ajoutez ici votre code pour gérer le rejet des cookies
+  console.log("Cookies rejetés !");
+}
+
+
+
+
 
 gsap.to(".para-gauche", {
 
@@ -61,12 +92,6 @@ const swiper = new Swiper('.swiper-container', {
     }
   }
 });
-
-
-
-
-
-
 
 
 

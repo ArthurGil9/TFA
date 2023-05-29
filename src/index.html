@@ -40,6 +40,9 @@
   <link rel="stylesheet" href="styles/app.css">
 
   <script src="scripts/app.js" defer></script>
+
+
+
 </head>
 
 <body>
@@ -83,15 +86,26 @@
       </ul>
 
 
+      <div class="popup" id="cookiePopup" style="display: none;">
+        <h2 class="title-sec">Ce site utilise des cookies</h2>
+        <p>C'est faux ! Ce site n'utilise pas du tout des cookies, c'était une blague. Tu peux donc accepter, pas de
+          stress !</p>
+        <button id="acceptBtn">Accepter</button>
+        <button id="rejectBtn">Rejeter</button>
+      </div>
+
+
       <div class="grid-accueil">
 
         <div class="grid-accueil-2">
           <h1 class="title title--prin"><span class="title-col">Ensemble,</span><br> en toute sécurité</h1>
 
           <p class="p--intro">PathMate servira à connaître l'état des chemins forestiers grâce à la participation des
-            utilisateurs. Vous pourrez signaler les obstacles, les difficultés ou encore l'état du chemin. Vous aiderez
+            utilisateurs. Vous pourrez signaler les obstacles, les difficultés ou encore l'état du chemin. Vous
+            aiderez
             ainsi la communauté à éviter les mauvaises surprises et à choisir un itinéraire adapté.</p>
-          <p class="p--intro"> L’idée de cette application est née dans le cadre du projet pour notre TFA. Cette landing
+          <p class="p--intro"> L’idée de cette application est née dans le cadre du projet pour notre TFA. Cette
+            landing
             page servira donc à expliquer le processus de recherche.</p>
         </div>
 
@@ -119,11 +133,13 @@
                 aider
                 au mieux. Pour celà, je me suis d’abord concentré sur les cyclistes, via différentes interviews et
                 rencontres,
-                notamment en roulant avec eux. J’ai pu rencontrer Arthur, Quentin, ou encore le club vtt d’Evrehailles.
+                notamment en roulant avec eux. J’ai pu rencontrer Arthur, Quentin, ou encore le club vtt
+                d’Evrehailles.
                 Ces
                 rencontres furent riches en réponses intéressantes pour moi.</p>
 
-              <p>Après une mise en commun et une analyse des réponses obtenues, voici les problèmes les plus fréquemment
+              <p>Après une mise en commun et une analyse des réponses obtenues, voici les problèmes les plus
+                fréquemment
                 rencontrés par les vététistes : </p>
             </div>
           </div>
@@ -214,7 +230,8 @@
 
           <p>Pour vous aider à éviter de passer par un itinéraire finalement bloqué, en mauvais état ou dangereux,
             l’idée
-            est de créer une application qui vous permettrait de savoir en temps réel si les sentiers que vous souhaitez
+            est de créer une application qui vous permettrait de savoir en temps réel si les sentiers que vous
+            souhaitez
             emprunter sont accessibles ou non. L'application permettrait à chaque utilisateur de signaler facilement
             tout
             problème rencontré en précisant où ils sont via géolocalisation. Les autres utilisateurs pourraient alors
@@ -244,7 +261,8 @@
             <div class="vignette-slider swiper-slide">
               <div class="carte2"><img src="assets/images/logowaze.png" alt="photo"></div>
               <h4>Waze </h4>
-              <p>Indique toutes les embûches présentes sur votre trajet comme les bouchons, les accidents ou encore les
+              <p>Indique toutes les embûches présentes sur votre trajet comme les bouchons, les accidents ou encore
+                les
                 contrôles de police. Se base sur les indications des utilisateurs. <span>➔</span></p>
 
             </div>
@@ -253,7 +271,8 @@
             <div class="vignette-slider swiper-slide">
               <div class="carte2"><img src="assets/images/logocoyotte.png" alt="photo"></div>
               <h4>Coyotte </h4>
-              <p>Indique les radars présents ou bien encore les perturbations sur la route. Fonctionne également avec la
+              <p>Indique les radars présents ou bien encore les perturbations sur la route. Fonctionne également avec
+                la
                 participation des utilisateurs pour signaler les radars. <span>➔</span></p>
 
             </div>
@@ -286,9 +305,11 @@
           <div class="vignette2">
             <div class="carte2"><img src="assets/images/logokomoot.png" alt="photo"></div>
             <h4>Komoot </h4>
-            <p>Elle permet aux utilisateurs de planifier des itinéraires personnalisés en fonction de leurs préférences
+            <p>Elle permet aux utilisateurs de planifier des itinéraires personnalisés en fonction de leurs
+              préférences
               et
-              de leurs niveaux de forme physique. Lorsque vous créez votre parcours, vous ne savez donc pas si le chemin
+              de leurs niveaux de forme physique. Lorsque vous créez votre parcours, vous ne savez donc pas si le
+              chemin
               est
               réellement praticable.</p>
           </div>
@@ -300,16 +321,19 @@
         <div>
           <p>Ces applications et fonctionnalités sont très utiles, mais elles sont soit limitées aux routes, soit ne
             permettent pas d'interagir en direct. Une fois votre parcours créé, rien ne vous garantit que vous saurez
-            l’emprunter. Actuellement, il n'existe donc pas d'application en temps réel pour les perturbations dans les
+            l’emprunter. Actuellement, il n'existe donc pas d'application en temps réel pour les perturbations dans
+            les
             bois
             ou campagne. </p>
-          <p class="p--audit">À noter que je suis également retourné vers certains des utilisateurs avec qui je m’étais
+          <p class="p--audit">À noter que je suis également retourné vers certains des utilisateurs avec qui je
+            m’étais
             entretenu pour leur expliquer brièvement mon idée. Ce retour vers les utilisateurs à permis de valider mon
             idée
             car les retours que j’ai obtenu ont été très positif, avec une approbation globale. Ils m’ont cependant
             incité
             à
-            me tourner essentiellement vers la partie signalement en tout genre et ne pas développer la partie création
+            me tourner essentiellement vers la partie signalement en tout genre et ne pas développer la partie
+            création
             d’itinéraire, comme j’avais en tête. Ce retour m’a donc également permis de me concentrer sur l’essentiel.
           </p>
         </div>
@@ -357,7 +381,8 @@
             </g>
           </svg>
           <h4>Obstacles sur le chemin</h4>
-          <p>Si le promeneur rencontre un arbre tombé en travers du chemin, une branche cassée, une pierre qui bloque le
+          <p>Si le promeneur rencontre un arbre tombé en travers du chemin, une branche cassée, une pierre qui bloque
+            le
             passage ou tout autre obstacle.</p>
         </div>
       </div>
@@ -373,12 +398,14 @@
         <h2 class="title title-sec">Une explication du passé</h2>
 
         <div class="grid-passe">
-          <p class="p-passe-1">Je vais revenir au début du projet, aux prémices, pour expliquer pourquoi j'ai choisi la
+          <p class="p-passe-1">Je vais revenir au début du projet, aux prémices, pour expliquer pourquoi j'ai choisi
+            la
             catégorie
             d'utilisateurs des vététistes. J'ai pris cette décision car je fais partie de cette communauté et que je
             rencontre souvent des problèmes lors de mes sorties. J'ai donc réalisé qu'il y avait de nombreux défis à
             relever
-            dans ce domaine. Au début, je suis resté trop attaché à mon idée de base, ce qui n'était pas bon et n'a pas
+            dans ce domaine. Au début, je suis resté trop attaché à mon idée de base, ce qui n'était pas bon et n'a
+            pas
             porté ses fruits car je devais d’abord me concentrer sur les problèmes des autres utilisateurs.
           </p>
 
@@ -387,14 +414,16 @@
             eu l'idée de créer l'application PathMate. La suite du développement de l'idée a été plus simple pour moi
             car
             je
-            "connais" ou du moins pense connaître les envies et besoins des vététistes pour améliorer ces problèmes. Mes
+            "connais" ou du moins pense connaître les envies et besoins des vététistes pour améliorer ces problèmes.
+            Mes
             utilisateurs ce sont d’ailleurs élargis car je pense que l’application pourrait être bénéfique à tout le
             monde.
           </p>
 
           <p> Ce projet m'a donc énormément motivé car si j'arrive à mener à bien cette idée, notamment pendant ma
             troisième
-            année, je sais que je pourrai aider de nombreuses personnes à profiter des bois en toute sécurité, y compris
+            année, je sais que je pourrai aider de nombreuses personnes à profiter des bois en toute sécurité, y
+            compris
             moi-même.</p>
 
           <img src="assets/images/IMG_5871.jpg" srcset="assets/images/IMG_5871@2x.jpg 2x"
@@ -428,15 +457,18 @@
         </div>
 
         <div class="div-futur3">
-          <p class="pub1"><!--<span class="guillemet">“</span>-->Êtes-vous fatigué de vous retrouver bloqué lors de vos
+          <p class="pub1"><!--<span class="guillemet">“</span>-->Êtes-vous fatigué de vous retrouver bloqué lors de
+            vos
             sorties
             en famille à
-            cause d'un arbre qui obstrue votre chemin ? Ou peut-être que vous avez été confronté à un sentier fermé pour
+            cause d'un arbre qui obstrue votre chemin ? Ou peut-être que vous avez été confronté à un sentier fermé
+            pour
             la
             chasse ?</p>
           <p class="p-futur">Ne laissez plus ces obstacles vous gâcher vos moments de détente en plein air ! Grâce à
             notre
-            application, vous pouvez savoir en temps réel si les sentiers que vous souhaitez emprunter sont accessibles
+            application, vous pouvez savoir en temps réel si les sentiers que vous souhaitez emprunter sont
+            accessibles
             ou
             non.
             Imaginez une randonnée en famille sans stress ni frustration. Une promenade dans la nature où vous pouvez
