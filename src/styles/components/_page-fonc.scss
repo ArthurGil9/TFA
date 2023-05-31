@@ -1,45 +1,46 @@
-.fonc-logo{
-   display: block;
-   margin-left: auto;
-   margin-right: auto;
-   margin-top: 0px;
-   width: 35%;
-   height: 180px;
+.fonc-logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    width: 35%;
+    height: 180px;
 
 }
 
-.swiper-container{
+.swiper-container {
     margin-top: 75px;
     margin-bottom: 50px;
     max-width: 100%;
     height: 100%;
     overflow: hidden;
 
-    .swiper-fonc{
+    .swiper-fonc {
         max-width: 85%;
-        height: 425px;;
+        height: 425px;
+        ;
         margin-inline-start: 7.5%;
         margin-inline-end: 7.5%;
     }
 }
 
-.flèche{
+.flèche {
     display: flex;
     align-items: center;
     width: 150%;
 }
 
 
-.swiper-slide{
+.swiper-slide {
     background-color: #FFFCF5;
     border-radius: 25px;
     display: block;
     align-items: center;
     box-shadow: #CCB67A 3px 3px 3px;
-    
+
 }
 
-.h4-fonc{
+.h4-fonc {
     font-family: "kallisto", sans-serif;
     font-weight: 500;
     font-style: normal;
@@ -50,50 +51,164 @@
     margin-top: 0px;
 }
 
-.p-fonc1{
+.p-fonc1 {
     margin-top: 75px;
 }
-.p-fonc2{
+
+.p-fonc2 {
     padding-bottom: 75px;
 }
 
 
-@media (min-width: 600px){
-    .fonc-logo{
+
+@media (min-width: 600px) {
+    .fonc-logo {
         width: 35%;
         height: 180px;
         margin-top: 0px;
-     }
+    }
 
-     .h4-fonc{
+    .h4-fonc {
         margin-top: 0px;
     }
 
-    .swiper-container{
-        .swiper-fonc{
+    .swiper-container {
+        .swiper-fonc {
+            max-width: 45%;
             height: 500px;
-            margin-inline-start: 2%;
-            margin-inline-end: 2%;
-            
-            p{
-                margin-left: 25px;
-                margin-right: 25px;
+            margin-inline-start: 2.5%;
+            margin-inline-end: 2.5%;
+
+            h4 {
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+
+            p {
+                margin-left: 15px;
+                margin-right: 15px;
             }
         }
 
-        
+
     }
 
 }
 
 
-@media (min-width: 800px){
-    .swiper-container{
-        .swiper-fonc{
-            width: 50%;
-            margin-inline-start: 5%;
-            margin-inline-end: 5%;
-            
+@media (min-width: 800px) {
+    .swiper-container {
+        .swiper-fonc {
+            max-width: 45%;
+            height: 450px;
+            margin-inline-start: 2.5%;
+            margin-inline-end: 2.5%;
+
         }
     }
+}
+
+@media (min-width: 1024px) {
+
+    .fond-fonc1 {
+        height: 800px;
+        padding-top: 50px;
+    }
+
+    .swiper-container {
+        .swiper-fonc {
+            max-width: 30%;
+            height: 500px;
+            margin-inline-start: 1.5%;
+            margin-inline-end: 1.5%;
+
+        }
+    }
+
+    .title-fonc {
+        margin-left: 200px;
+        margin-right: 100px;
+    }
+
+    .grid-fonc {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 50px;
+        margin-left: 200px;
+        margin-right: 75px;
+
+        p {
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+
+    .fond-fonc2 {
+        margin-top: 100px;
+
+        p {
+            max-width: 500px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+
+}
+
+@media (min-width: 1200px) {
+
+    .fond-fonc1 {
+        height: 800px;
+        padding-top: 100px;
+    }
+
+
+}
+
+@media (min-width: 1400px) {
+
+    .fond-fonc1 {
+        height: 600px;
+        padding-top: 100px;
+    }
+
+    .grid-fonc {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 100px;
+        margin-left: 200px;
+        margin-right: 75px;
+
+        p {
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+
+    .swiper-container-fonc {
+        margin-left: 200px;
+        margin-right: 75px;
+
+        .swiper-fonc {
+            max-width: 29%;
+            height: 500px;
+            margin-inline-start: 2%;
+            margin-inline-end: 2%;
+        }
+    }
+
+    .fond-fonc2 {
+        margin-top: 150px;
+
+        p {
+            max-width: 600px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+
 }

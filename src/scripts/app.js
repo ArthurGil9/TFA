@@ -27,26 +27,31 @@ function Menuburger() {
 
 }
 
+if (document.getElementById("cookiePopup")) {
+  // Vérifier si le pop-up a déjà été accepté
+  if (!getCookie("popupAccepted")) {
+    // Fonction pour afficher le pop-up
+    function showPopup() {
+      var popup = document.getElementById("cookiePopup");
+      popup.style.display = "block";
+    }
 
-function showPopup() {
-  var popup = document.getElementById("cookiePopup");
-  popup.style.display = "block";
+    // Attendez 3 secondes avant d'afficher le pop-up
+    setTimeout(showPopup, 1500);
+
+    // Récupérer les références des boutons
+    var acceptBtn = document.getElementById("acceptBtn");
+    var rejectBtn = document.getElementById("rejectBtn");
+
+    // Ajouter des écouteurs d'événements aux boutons
+    acceptBtn.addEventListener("click", acceptCookies);
+    rejectBtn.addEventListener("click", rejectCookies);
+  }
 }
-
-// Attendez 3 secondes avant d'afficher le pop-up
-setTimeout(showPopup, 1500);
-
-// Récupérer les références des boutons
-var acceptBtn = document.getElementById("acceptBtn");
-var rejectBtn = document.getElementById("rejectBtn");
-
-// Ajouter des écouteurs d'événements aux boutons
-acceptBtn.addEventListener("click", acceptCookies);
-rejectBtn.addEventListener("click", rejectCookies);
 
 function acceptCookies() {
   document.getElementById("cookiePopup").style.display = "none";
-  // Ajoutez ici votre code pour enregistrer la préférence de l'utilisateur (par exemple, en utilisant des cookies)
+  setCookie("popupAccepted", true, 365);
   console.log("Cookies acceptés !");
 }
 
@@ -56,6 +61,32 @@ function rejectCookies() {
   console.log("Cookies rejetés !");
 }
 
+// Fonction pour définir un cookie
+function setCookie(name, value, days) {
+  var expires = "";
+  if (days) {
+    var date = new Date();
+    date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+    expires = "; expires=" + date.toUTCString();
+  }
+  document.cookie = name + "=" + (value || "") + expires + "; path=/";
+}
+
+// Fonction pour obtenir la valeur d'un cookie
+function getCookie(name) {
+  var nameEQ = name + "=";
+  var cookies = document.cookie.split(";");
+  for (var i = 0; i < cookies.length; i++) {
+    var cookie = cookies[i];
+    while (cookie.charAt(0) === " ") {
+      cookie = cookie.substring(1, cookie.length);
+    }
+    if (cookie.indexOf(nameEQ) === 0) {
+      return cookie.substring(nameEQ.length, cookie.length);
+    }
+  }
+  return null;
+}
 
 
 

@@ -41,12 +41,11 @@ header {
 
 @media (min-width: 1024px) {
 
-    .body {
+    .body-acc {
         margin-left: 25px;
         border-left: 3px solid #E7C06A;
-
-
     }
+
 
     .velo-vert {
         display: block;
@@ -80,6 +79,12 @@ header {
         border-bottom-right-radius: 200px;
         margin-bottom: 75px;
         justify-items: center;
+
+        .title-header {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
 
     }
 

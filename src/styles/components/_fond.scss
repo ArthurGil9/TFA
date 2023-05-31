@@ -58,11 +58,43 @@
     }
 
     .fond-fonc1 {
-        background-size: 40%;
-        background-position: 600px 0px;
+        background-size: 35%;
+        background-position: 500px 50px;
     }
 
 }
 
 
-@media (min-width: 800px) {}
+@media (min-width: 800px) {
+
+    .fond-fonc1 {
+        background-size: 30%;
+        background-position: 660px 50px;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .fond-fonc1 {
+        background-size: 30%;
+        background-position: 900px -50px;
+    }
+
+    .section-besoin {
+        background-size: 85%;
+        background-position: 50px 200px;
+    }
+}
+
+@media (min-width: 1400px) {
+
+    .fond-fonc1 {
+        background-size: 30%;
+        background-position: 1150px -250px;
+    }
+
+    .section-besoin {
+        background-size: 65%;
+        background-position: 50px 150px;
+    }
+}
