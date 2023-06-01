@@ -40,6 +40,8 @@
   <link rel="stylesheet" href="styles/app.css">
 
   <script src="scripts/app.js" defer></script>
+
+
 </head>
 
 <body>
@@ -123,80 +125,94 @@
 
       </div>
 
-      <div class="swiper-container swiper-container-fonc">
+
+
+
+
+
+      <div class="swiper-container swiper-container-fonc mySwiper">
         <div class="swiper-wrapper">
-
           <div class="swiper-slide swiper-fonc">
-
             <img class="fonc-logo" src="assets/images/emotearbre.svg" alt="">
             <h4 class="h4-fonc">Obstacle sur le chemin</h4>
             <p>Si le promeneur rencontre un arbre tombé en travers du chemin, une branche cassée, une pierre qui bloque
-              le
-              passage ou tout autre obstacle.
-            </p>
+              le passage ou tout autre obstacle.</p>
           </div>
           <div class="swiper-slide swiper-fonc">
-
             <img class="fonc-logo" src="assets/images/falaise.svg" alt="">
             <h4 class="h4-fonc">Zone à risque</h4>
             <p>Si le promeneur repère des zones potentiellement dangereuses comme des falaises, des zones à risque
               d'avalanche ou des zones où il y a un risque de glissement de terrain, il peut également signaler ces
-              zones
-              pour avertir les autres utilisateurs de l'application.
-            </p>
+              zones pour avertir les autres utilisateurs de l'application.</p>
           </div>
           <div class="swiper-slide swiper-fonc">
-
             <img class="fonc-logo" src="assets/images/chasse.svg" alt="">
             <h4 class="h4-fonc">La chasse</h4>
-            <p>Si le promeneur constate que les chemin est fermé à cause de la chasse, il peut l’indiquer aux autres
-              utilisateurs. Cela pourrait notamment éviter les accidents.
-            </p>
+            <p>Si le promeneur constate que les chemins sont fermés à cause de la chasse, il peut l’indiquer aux autres
+              utilisateurs. Cela pourrait notamment éviter les accidents.</p>
           </div>
           <div class="swiper-slide swiper-fonc">
-
             <img class="fonc-logo" src="assets/images/boue.svg" alt="">
             <h4 class="h4-fonc">État du chemin</h4>
             <p>Si le chemin est boueux, glissant ou difficile à traverser, le promeneur peut signaler cette information
               aux autres utilisateurs de l'application pour qu'ils soient prêts et équipés en conséquence ou bien qu’ils
-              adaptent leurs itinéraires.
-            </p>
+              adaptent leurs itinéraires.</p>
           </div>
           <div class="swiper-slide swiper-fonc">
-
             <img class="fonc-logo" src="assets/images/animaux.svg" alt="">
             <h4 class="h4-fonc">Présence d'animaux</h4>
             <p>Si le promeneur remarque la présence d'animaux sauvages, comme des sangliers, il peut signaler cette
-              information aux autres utilisateurs pour leur sécurité.
-            </p>
+              information aux autres utilisateurs pour leur sécurité.</p>
           </div>
           <div class="swiper-slide swiper-fonc">
-
             <img class="fonc-logo" src="assets/images/ferme.svg" alt="">
             <h4 class="h4-fonc">Chemin fermé</h4>
             <p>Si le promeneur constate qu’un chemin initialement ouvert à tous est fermé pour une quelconque raison, il
-              peut le signaler.
-            </p>
+              peut le signaler.</p>
           </div>
           <div class="swiper-slide swiper-fonc">
-
             <img class="fonc-logo" src="assets/images/lieu.svg" alt="">
             <h4 class="h4-fonc">Point d'intérêt</h4>
             <p>Si le promeneur découvre des points d'intérêt tels que des points de vue, des cascades ou des lacs, il
-              peut
-              partager ces informations pour permettre aux autres utilisateurs de profiter pleinement de leur expérience
-              de la nature.
-            </p>
-
-
+              peut partager ces informations pour permettre aux autres utilisateurs de profiter pleinement de leur
+              expérience de la nature.</p>
           </div>
+
         </div>
+        <div class="swiper-pagination"></div>
       </div>
 
+      <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+     
+      <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 1,
+          breakpoints: {
+            600: {
+              slidesPerView: 2,
+            },
+            1024: {
+              slidesPerView: 3,
+            }
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+        });
+      </script>
+
+
+
+
       <div class="fond-fonc2">
-        <p class="p-fonc1">Il sera donc possible de fournir une indication à l’endroit même où nous nous trouvons à ce
-          moment ou bien pour une zone complète, comme pour les chasses. Cela dépendra de l’élément à signaler.</p>
-        <p class="p-fonc2"><strong> Ces signalements aideront la communauté à rendre les bois et campagnes plus sûr et
+        <p class="p-fonc1">Il sera donc possible de fournir une indication à l’endroit même où nous nous trouvons
+          à ce
+          moment ou bien pour une zone complète, comme pour les chasses. Cela dépendra de l’élément à signaler.
+        </p>
+        <p class="p-fonc2"><strong> Ces signalements aideront la communauté à rendre les bois et campagnes plus
+            sûr et
             agréables pour tous. </strong></p>
         <div>
 

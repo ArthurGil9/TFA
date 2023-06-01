@@ -89,8 +89,6 @@ function getCookie(name) {
 }
 
 
-
-
 gsap.to(".para-gauche", {
 
   scrollTrigger: {
@@ -104,25 +102,49 @@ gsap.to(".para-gauche", {
 });
 
 
+const myButton = document.getElementById('myButton');
+const transitionOverlay = document.querySelector('.transition-overlay');
+
+if (myButton && transitionOverlay) {
+  myButton.addEventListener('click', function () {
+
+    transitionOverlay.classList.add('active');
+
+    // Rediriger vers la nouvelle page après une courte pause
+    setTimeout(function () {
+      window.location.href = 'fonctionnalités.html';
+    }, 750);
+  });
+}
 
 
 
-
-const swiper = new Swiper('.swiper-container', {
+/*const swiper = new Swiper('.swiper-container', {
   slidesPerView: 1,
-
   breakpoints: {
-
     600: {
       slidesPerView: 2,
-
     },
-
     1024: {
       slidesPerView: 3,
     }
-  }
-});
+  },
+
+  pagination: {
+    el: ".swiper-pagination",
+    type: "fraction",
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});*/
+
+
+
+
+
+
 
 
 

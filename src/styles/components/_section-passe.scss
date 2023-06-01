@@ -85,30 +85,29 @@
     }
 
     .section-passe p:nth-child(2) {
-        grid-column: 2 / 3;
-        grid-row: 1 / 2;
-        margin-right: 100px;
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        margin-right: 50px;
+        margin-left: 100px;
         margin-top: 50px;
     }
 
     .section-passe p:nth-child(3) {
-        grid-column: 1 / 2;
+        grid-column: 2 / 3;
         grid-row: 2 / 3;
-        margin-left: 100px;
-        font-size: 22px;
-        font-weight: 600;
-        letter-spacing: 2px;
-        line-height: 1.5;
+        margin-left: 50px;
+        margin-top: 50px;
     }
 
     .section-passe img {
         grid-column: 2 / 3;
-        grid-row: 2 / 3;
+        grid-row: 1 / 2;
 
         display: block;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 0;
+        margin-top: -150px;
+        margin-bottom: 50px;
     }
 
     .section-passe {
