@@ -115,6 +115,26 @@
             width: 90%;
         }
     }
+}
 
+@media (min-width: 1800px) {
 
+    .section-passe p {
+        opacity: 1;
+    }
+
+    .section-passe .p-passe-1 {
+        margin-left: 150px;
+        margin-top: 50px;
+    }
+
+    .section-passe p:nth-child(1) {
+        margin-right: 50px;
+        margin-left: 150px;
+        margin-top: 50px;
+    }
+
+    .grid-passe {
+        margin-right: 100px;
+    }
 }

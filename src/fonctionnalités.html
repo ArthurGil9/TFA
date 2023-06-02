@@ -94,7 +94,8 @@
 
         <div class="grid-fonc">
 
-          <p>Chaque utilisateur aura la possibilité de signaler en temps réel et via une carte interactive des
+          <p class="p-fonc-1">Chaque utilisateur aura la possibilité de signaler en temps réel et via une carte
+            interactive des
             obstacles,
             des difficultés ou l'état du chemin que vous empruntez. Cela signifie que si vous rencontrez des problèmes
             tels
@@ -107,7 +108,8 @@
             vous pouvez également le signaler pour que les autres utilisateurs soient informés.
           </p>
           <div>
-            <p>Si un autre membre de la communauté passe également par ce chemin, il lui sera alors proposé de confirmer
+            <p class="p-fonc-2">Si un autre membre de la communauté passe également par ce chemin, il lui sera alors
+              proposé de confirmer
               si
               l’information est toujours d’actualité ou non. Si il confirme, l’information reste d’actualité sinon, elle
               s’enlève. Il faudra donc compter sur la participation active mais honnête de tous les utilisateurs. </p>
@@ -184,17 +186,19 @@
 
       <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
-     
+
       <script>
         var swiper = new Swiper(".mySwiper", {
-          slidesPerView: 1,
-          breakpoints: {
-            600: {
-              slidesPerView: 2,
-            },
-            1024: {
-              slidesPerView: 3,
-            }
+          effect: "coverflow",
+          grabCursor: true,
+          centeredSlides: true,
+          slidesPerView: "auto",
+          coverflowEffect: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: false,
           },
           pagination: {
             el: ".swiper-pagination",

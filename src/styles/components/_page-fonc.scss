@@ -59,6 +59,15 @@
     padding-bottom: 75px;
 }
 
+.swiper-pagination {
+    position: relative;
+    margin-top: 25px;
+
+}
+
+.swiper-pagination-bullet {
+    background-color: #004F2D;
+}
 
 
 @media (min-width: 600px) {
@@ -157,6 +166,12 @@
         }
     }
 
+    .swiper-pagination {
+        position: relative;
+        margin-top: 50px;
+        color: #004F2D;
+    }
+
 
 }
 
@@ -207,6 +222,54 @@
 
         p {
             max-width: 600px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
+
+@media (min-width: 1800px) {
+
+    .fond-fonc1 {
+        padding-top: 150px;
+
+        h1 {
+            margin-left: 300px;
+        }
+    }
+
+    .grid-fonc {
+        margin-left: 200px;
+        margin-right: 75px;
+
+
+        p:nth-child(2) {
+            margin-left: 0px;
+            margin-right: 100px;
+        }
+
+        .p-fonc-1 {
+            margin-left: 100px;
+            margin-right: 0px;
+        }
+
+        .p-fonc-2 {
+            margin-right: 100px;
+        }
+    }
+
+    .swiper-container-fonc {
+        margin-left: 200px;
+        margin-right: 75px;
+    }
+
+
+    .fond-fonc2 {
+        margin-top: 150px;
+
+        p {
+            max-width: 800px;
             display: block;
             margin-left: auto;
             margin-right: auto;

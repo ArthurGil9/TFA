@@ -392,18 +392,22 @@ a {
   }
 
   .fond-audit {
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    margin-bottom: 0px;
+    padding-left: 50px;
 
     h3 {
+      grid-column: 1 / 2;
       margin-right: 25px;
+      margin-left: 0px;
     }
 
     p {
       margin-right: 150px;
       margin-left: 75px;
       margin-top: 25px;
+      grid-column: 2 / 3;
     }
   }
 }
@@ -424,7 +428,7 @@ a {
     padding-left: 100px;
 
     h3 {
-      margin-right: 25px;
+      margin-right: 0px;
     }
 
     p {
@@ -459,6 +463,44 @@ a {
       justify-content: center;
     }
   }
+}
 
 
+@media (min-width: 1800px) {
+
+  .section-idee {
+    padding-left: 100px;
+
+    p {
+      max-width: 800px;
+    }
+  }
+
+  .swiper-container {
+
+    .swiper-slide {
+      max-width: 23%;
+      height: 400px;
+      margin-inline-start: 4.5%;
+      margin-inline-end: 4.5%;
+    }
+  }
+
+  .section-comp {
+    margin-left: 50px;
+    margin-right: 50px;
+
+    .vignette2 {
+      max-width: 70%;
+      height: 500px;
+    }
+  }
+
+  .fond-audit {
+    padding-bottom: 100px;
+
+    p {
+      max-width: 800px;
+    }
+  }
 }

@@ -119,7 +119,7 @@ if (myButton && transitionOverlay) {
 
 
 
-/*const swiper = new Swiper('.swiper-container', {
+const swiper = new Swiper('.swiper-container', {
   slidesPerView: 1,
   breakpoints: {
     600: {
@@ -129,16 +129,14 @@ if (myButton && transitionOverlay) {
       slidesPerView: 3,
     }
   },
-
   pagination: {
-    el: ".swiper-pagination",
+    el: ".swiper-pagination2",
     type: "fraction",
   },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-});*/
+});
+
+
+
 
 
 
