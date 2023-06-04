@@ -13,6 +13,7 @@
 @import 'components/grille';
 @import 'components/section-fonc';
 @import 'components/cookie';
+@import 'components/page-uikit';
 
 @import '../../node_modules/swiper/swiper-bundle.css';
 
@@ -42,8 +43,11 @@ header {
 @media (min-width: 1024px) {
 
     .body-acc {
-        margin-left: 25px;
-        border-left: 3px solid #E7C06A;
+
+        main {
+            margin-left: 25px;
+            border-left: 3px solid #E7C06A;
+        }
     }
 
 

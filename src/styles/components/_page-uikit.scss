@@ -1,0 +1,112 @@
+.main {
+
+    .title-ui {
+        color: #004F2D;
+        text-align: center;
+        margin-top: 50px;
+        text-decoration: underline;
+    }
+
+    h4 {
+        margin-left: 25px;
+        font-family: "kallisto", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        font-size: 23px;
+        color: #004F2D;
+    }
+
+    button {
+        margin-top: 25px;
+    }
+
+    .km-ui {
+        margin-top: 25px;
+    }
+
+    p {
+        margin-bottom: 25px;
+    }
+}
+
+.color-palette {
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.color-box {
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+    border: 1px solid black;
+    display: flex;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+
+    p {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+
+
+
+
+@media (min-width: 1024px) {
+    .main {
+        padding-left: 200px;
+
+        .title {
+            margin-left: 0px;
+            margin-top: 50px;
+            margin-bottom: 25px;
+        }
+
+        p {
+            margin-left: 0px;
+            margin-top: 50px;
+            margin-bottom: 25px;
+        }
+
+        .km-ui {
+            margin-left: 0px;
+            margin-top: 50px;
+            margin-bottom: 25px;
+        }
+
+        h4 {
+            margin-left: 0;
+            margin-top: 50px;
+            margin-bottom: 25px;
+        }
+    }
+
+    .color-palette {
+        margin-left: 250px;
+        margin-right: 250px;
+        margin-top: 50px;
+
+        p {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 0;
+        }
+    }
+
+}
+
+@media (min-width: 1400px) {
+    .color-palette {
+        margin-left: 400px;
+        margin-right: 400px;
+        margin-top: 50px;
+    }
+}
