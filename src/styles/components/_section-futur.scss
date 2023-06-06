@@ -16,6 +16,7 @@
 .guillemet {
     font-size: 25px;
     color: #D95D39;
+
 }
 
 .div-futur {
@@ -38,6 +39,8 @@
     .div-futur {
         margin-top: 100px;
     }
+
+
 }
 
 @media (min-width: 1024px) {
@@ -66,13 +69,22 @@
 
         p {
             margin: 0;
-
-            .guillemet {
-                font-size: 150px;
-                padding-top: 100px;
-                text-indent: 10;
-            }
         }
+
+
+        .pub1::before {
+            background-image: url("../assets/images/guillemets1.svg");
+        }
+
+        .p-futur::after {
+            content: '”';
+            color: #D95D39;
+            font-size: 100px;
+            text-indent: -25px;
+            position: relative;
+            bottom: 25px;
+        }
+
     }
 
 

@@ -14,6 +14,7 @@
 @import 'components/section-fonc';
 @import 'components/cookie';
 @import 'components/page-uikit';
+@import 'components/credit';
 
 @import '../../node_modules/swiper/swiper-bundle.css';
 
@@ -52,16 +53,16 @@ header {
 
 
     .velo-vert {
-        display: block;
-        position: absolute;
         position: fixed;
-        width: 100px;
-        height: 100px;
-        top: 600px;
-        left: 10px;
-        z-index: 50;
-        opacity: 50%;
-
+        /* Position fixe pour que l'image reste en place lors du défilement */
+        top: 550px;
+        /* Position initiale de l'image depuis le haut de la fenêtre */
+        left: 20px;
+        /* Position initiale de l'image depuis la gauche de la fenêtre */
+        width: 50px;
+        /* Largeur de l'image */
+        height: 50px;
+        /* Hauteur de l'image */
     }
 
 
@@ -97,6 +98,7 @@ header {
         left: 50px;
         width: fit-content;
         z-index: 200;
+        display: none;
 
 
         path {

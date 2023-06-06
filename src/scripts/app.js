@@ -101,6 +101,17 @@ gsap.to(".para-gauche", {
   },
 });
 
+gsap.to(".velo-vert", {
+  yPercent: 100,
+  ease: "none",
+  scrollTrigger: {
+    trigger: "header", // Élément déclencheur de l'animation (dans cet exemple, le header)
+    start: "bottom top", // Point de départ de l'animation (bas de l'élément déclencheur)
+    end: "footer", // Point de fin de l'animation (dans cet exemple, le footer)
+    scrub: true,
+  },
+});
+
 
 const myButton = document.getElementById('myButton');
 const transitionOverlay = document.querySelector('.transition-overlay');
@@ -124,15 +135,13 @@ const swiper = new Swiper('.swiper-container', {
   breakpoints: {
     600: {
       slidesPerView: 2,
+
     },
     1024: {
       slidesPerView: 3,
     }
   },
-  pagination: {
-    el: ".swiper-pagination2",
-    type: "fraction",
-  },
+
 });
 
 

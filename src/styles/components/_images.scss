@@ -16,14 +16,15 @@ img {
 
 @media (min-width: 600px) {
   .img--arbre {
-    width: 500px;
+    width: 400px;
     height: 300px;
+    margin-left: auto;
   }
 }
 
 @media (min-width: 800px) {
   .img--arbre {
-    width: 700px;
+    width: 600px;
     height: 400px;
   }
 }

@@ -1,0 +1,134 @@
+.div__cred {
+    margin-left: 19px;
+}
+
+.dark .main__credit {
+    background-image: none;
+}
+
+.title-credit {
+    display: flex;
+    justify-content: center;
+    margin-top: 57px;
+    margin-bottom: 57px;
+    text-decoration: underline;
+}
+
+.credit_list {
+    list-style: none;
+    padding-left: 19px;
+    margin-top: 19px;
+    margin-bottom: 19px;
+}
+
+
+.p__cred {
+    margin-left: 19px;
+    margin-right: 0;
+    margin-top: 19px;
+    margin-bottom: 19px;
+    padding: 0;
+}
+
+
+@media (min-width: 600px) {
+    .div__cred {
+        margin-left: 75px;
+
+    }
+
+    .dark .main__credit {
+        background-image: none;
+    }
+
+    .title__credit {
+        font-size: 40px;
+        display: flex;
+        justify-content: center;
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+
+    .credit_list {
+        list-style: none;
+        padding-left: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .cred_link {
+        font-size: 20px;
+
+    }
+
+    .p__cred {
+        margin-left: 20px;
+        margin-right: 0;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+}
+
+
+
+@media (min-width: 1024px) {
+
+
+    .div__cred {
+        margin-left: 20px;
+    }
+
+    .dark .main__credit {
+        background-image: none;
+    }
+
+    .title__credit {
+        font-size: 42px;
+        display: flex;
+        justify-content: center;
+        margin-top: 63px;
+        margin-bottom: 63px;
+    }
+
+    .credit_list {
+        list-style: none;
+        padding-left: 20px;
+        margin-top: 21px;
+        margin-bottom: 21px;
+    }
+
+    .cred_link {
+        font-size: 20px;
+
+    }
+
+    .p__cred {
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 21px;
+        margin-bottom: 21px;
+        padding: 0;
+    }
+
+    .div__cred {
+        display: grid;
+        grid-template-columns: 350px 350px;
+        grid-gap: 63px;
+        justify-content: center;
+
+    }
+}
+
+@media (min-width: 1400px) {
+    .div__cred {
+        display: grid;
+        grid-template-columns: 340px 340px 340px;
+        grid-gap: 63px;
+        justify-content: center;
+        margin-left: 100px;
+        margin-bottom: 150px;
+
+    }
+}
