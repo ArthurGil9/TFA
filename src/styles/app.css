@@ -123,6 +123,7 @@ a {
   }
   .p--audit {
     padding-bottom: 75px;
+    margin-bottom: 75px;
   }
 }
 @media (min-width: 800px) {
@@ -481,12 +482,6 @@ img {
 }
 
 @media (min-width: 600px) {
-  .btn1 {
-    display: block;
-    /*position: absolute;
-    top: 75%;
-    left: 25%;*/
-  }
   .btn--style {
     font-size: 36px;
     padding: 15px;
@@ -516,6 +511,11 @@ img {
   pointer-events: auto;
 }
 
+@media (min-width: 1024px) {
+  .btn--p2 {
+    margin-bottom: 150px;
+  }
+}
 .section-besoin {
   background-image: url("../assets/images/velofond.svg");
   background-repeat: no-repeat;
@@ -1275,6 +1275,7 @@ a {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    padding-bottom: 50px;
   }
   .grid-passe p {
     margin-left: 50px;
@@ -2242,26 +2243,21 @@ header {
   z-index: 200;
 }
 
-.velo-vert {
-  display: none;
+.reveal {
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.act {
+  transform: translateY(0);
+  opacity: 1;
 }
 
 @media (min-width: 1024px) {
   .body-acc main {
     margin-left: 25px;
     border-left: 3px solid #E7C06A;
-  }
-  .velo-vert {
-    position: fixed;
-    /* Position fixe pour que l'image reste en place lors du défilement */
-    top: 550px;
-    /* Position initiale de l'image depuis le haut de la fenêtre */
-    left: 20px;
-    /* Position initiale de l'image depuis la gauche de la fenêtre */
-    width: 50px;
-    /* Largeur de l'image */
-    height: 50px;
-    /* Hauteur de l'image */
   }
   header {
     position: absolute;

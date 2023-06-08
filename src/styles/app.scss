@@ -37,9 +37,18 @@ header {
     z-index: 200;
 }
 
-.velo-vert {
-    display: none;
+.reveal {
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
 }
+
+.reveal.act {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
 
 
 @media (min-width: 1024px) {
@@ -52,19 +61,6 @@ header {
         }
     }
 
-
-    .velo-vert {
-        position: fixed;
-        /* Position fixe pour que l'image reste en place lors du défilement */
-        top: 550px;
-        /* Position initiale de l'image depuis le haut de la fenêtre */
-        left: 20px;
-        /* Position initiale de l'image depuis la gauche de la fenêtre */
-        width: 50px;
-        /* Largeur de l'image */
-        height: 50px;
-        /* Hauteur de l'image */
-    }
 
 
 

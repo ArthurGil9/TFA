@@ -28,22 +28,20 @@ function Menuburger() {
 }
 
 if (document.getElementById("cookiePopup")) {
-  // Vérifier si le pop-up a déjà été accepté
+
   if (!getCookie("popupAccepted")) {
-    // Fonction pour afficher le pop-up
+    $
     function showPopup() {
       var popup = document.getElementById("cookiePopup");
       popup.style.display = "block";
     }
 
-    // Attendez 3 secondes avant d'afficher le pop-up
     setTimeout(showPopup, 1500);
 
-    // Récupérer les références des boutons
+    $
     var acceptBtn = document.getElementById("acceptBtn");
     var rejectBtn = document.getElementById("rejectBtn");
-
-    // Ajouter des écouteurs d'événements aux boutons
+    $
     acceptBtn.addEventListener("click", acceptCookies);
     rejectBtn.addEventListener("click", rejectCookies);
   }
@@ -57,11 +55,11 @@ function acceptCookies() {
 
 function rejectCookies() {
   document.getElementById("cookiePopup").style.display = "none";
-  // Ajoutez ici votre code pour gérer le rejet des cookies
+
   console.log("Cookies rejetés !");
 }
 
-// Fonction pour définir un cookie
+
 function setCookie(name, value, days) {
   var expires = "";
   if (days) {
@@ -72,7 +70,7 @@ function setCookie(name, value, days) {
   document.cookie = name + "=" + (value || "") + expires + "; path=/";
 }
 
-// Fonction pour obtenir la valeur d'un cookie
+
 function getCookie(name) {
   var nameEQ = name + "=";
   var cookies = document.cookie.split(";");
@@ -105,9 +103,9 @@ gsap.to(".velo-vert", {
   yPercent: 100,
   ease: "none",
   scrollTrigger: {
-    trigger: "header", // Élément déclencheur de l'animation (dans cet exemple, le header)
-    start: "bottom top", // Point de départ de l'animation (bas de l'élément déclencheur)
-    end: "footer", // Point de fin de l'animation (dans cet exemple, le footer)
+    trigger: "header",
+    start: "bottom top",
+    end: "footer",
     scrub: true,
   },
 });
@@ -121,12 +119,29 @@ if (myButton && transitionOverlay) {
 
     transitionOverlay.classList.add('active');
 
-    // Rediriger vers la nouvelle page après une courte pause
     setTimeout(function () {
       window.location.href = 'fonctionnalités.html';
     }, 750);
   });
 }
+
+function reveal() {
+  var reveals = document.querySelectorAll(".reveal");
+
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 150;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("act");
+    } else {
+      reveals[i].classList.remove("act");
+    }
+  }
+}
+
+window.addEventListener("scroll", reveal);
 
 
 
@@ -143,6 +158,7 @@ const swiper = new Swiper('.swiper-container', {
   },
 
 });
+
 
 
 

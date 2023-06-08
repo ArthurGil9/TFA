@@ -32,12 +32,7 @@
 }
 
 @media (min-width: 600px) {
-    .btn1 {
-        display: block;
-        /*position: absolute;
-        top: 75%;
-        left: 25%;*/
-    }
+
 
     .btn--style {
         font-size: 36px;
@@ -70,4 +65,11 @@
 .transition-overlay.active {
     opacity: 1;
     pointer-events: auto;
+}
+
+
+@media (min-width: 1024px) {
+    .btn--p2 {
+        margin-bottom: 150px;
+    }
 }
