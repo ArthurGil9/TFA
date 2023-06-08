@@ -181,8 +181,8 @@ a {
   .km {
     margin-left: 25px;
   }
-  .km ::before {
-    content: "◉";
+  .title-pass {
+    margin-left: 100px;
   }
 }
 @media (min-width: 1400px) {
@@ -223,6 +223,9 @@ a {
   .km {
     margin-left: 25px;
   }
+  .title-pass {
+    margin-left: 100px;
+  }
 }
 @media (min-width: 1800px) {
   p {
@@ -238,8 +241,8 @@ img {
 }
 
 .img--arbre {
-  width: 350px;
-  height: 210px;
+  width: 325px;
+  height: 250px;
   margin-left: auto;
   margin-right: auto;
   border-radius: 33px;
@@ -386,13 +389,16 @@ img {
   transform: rotate(135deg);
 }
 
+.burger-2 {
+  display: none;
+}
+
 @media (min-width: 1024px) {
   .nav__menu {
     position: absolute;
     z-index: 10;
     overflow: hidden;
     cursor: pointer;
-    text-align: center;
     flex-direction: column;
     color: #E7C06A;
     font-family: "kallisto", sans-serif;
@@ -406,12 +412,6 @@ img {
     transform: translateX(0);
     transition: transform 1s ease-in-out;
     border-bottom-right-radius: 200px;
-  }
-  .nav__menu :hover {
-    letter-spacing: 5px;
-  }
-  .nav__menu :hover ::before {
-    content: "➜";
   }
   .burger__close {
     transform: translateX(-100%);
@@ -435,6 +435,17 @@ img {
   }
   .nav__menu__el {
     margin-top: 50px;
+    display: flex;
+    align-items: left;
+  }
+  .nav__menu__el :hover {
+    letter-spacing: 5px;
+  }
+  .nav__menu__el :hover ::before {
+    content: "➜";
+  }
+  .burger-2 {
+    display: block;
   }
 }
 .btn--style {
@@ -1344,6 +1355,10 @@ a {
   padding-top: 50px;
 }
 
+.guillemet {
+  display: none;
+}
+
 @media (min-width: 600px) {
   .guillemet {
     font-size: 35px;
@@ -1371,25 +1386,45 @@ a {
     height: 250px;
   }
   .div-futur3 {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 600px;
-    margin-top: 75px;
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-rows: 0.5fr 2fr 0.5fr;
+    grid-gap: 25px;
+    margin-top: 25px;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-bottom: 100px;
   }
   .div-futur3 p {
-    margin: 0;
+    margin: 0%;
   }
-  .div-futur3 .pub1::before {
-    background-image: url("../assets/images/guillemets1.svg");
+  .div-futur3 .p-futur {
+    padding-bottom: 0;
   }
-  .div-futur3 .p-futur::after {
-    content: "”";
-    color: #D95D39;
-    font-size: 100px;
-    text-indent: -25px;
-    position: relative;
-    bottom: 25px;
+  .div-futur3 div {
+    grid-row: 2/3;
+    grid-column: 2/3;
+  }
+  .guillemet {
+    grid-row: 1/2;
+    width: 80%;
+    display: block;
+  }
+  svg:nth-child(3) {
+    grid-row: 3/4;
+    grid-column: 3/4;
+  }
+}
+@media (min-width: 1400px) {
+  .div-futur3 {
+    margin-left: 250px;
+    margin-right: 250px;
+  }
+}
+@media (min-width: 1800px) {
+  .div-futur3 {
+    margin-left: 400px;
+    margin-right: 400px;
   }
 }
 .fond-idee {
@@ -1496,7 +1531,7 @@ footer {
 .menu__reseau {
   list-style: none;
   padding: 10px;
-  margin: 0 10px;
+  margin: 0 10px 0px;
 }
 
 .svg__reseau:hover {
@@ -1515,11 +1550,14 @@ footer {
   color: #004F2D;
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
   margin-bottom: 20px;
   font-family: "forma-djr-micro", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 16px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .logodwm {
@@ -1530,6 +1568,8 @@ footer {
   color: #004F2D;
   font-size: 18px;
   text-decoration: none;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .link:hover {
@@ -1997,6 +2037,11 @@ footer {
   margin-right: auto;
 }
 
+@media (min-width: 600px) {
+  .main h4 {
+    margin-left: 75px;
+  }
+}
 @media (min-width: 1024px) {
   .main {
     padding-left: 200px;
@@ -2041,7 +2086,8 @@ footer {
   }
 }
 .div__cred {
-  margin-left: 19px;
+  margin-left: 20px;
+  margin-bottom: 75px;
 }
 
 .dark .main__credit {
@@ -2074,6 +2120,7 @@ footer {
 @media (min-width: 600px) {
   .div__cred {
     margin-left: 75px;
+    margin-bottom: 100px;
   }
   .dark .main__credit {
     background-image: none;
@@ -2147,6 +2194,34 @@ footer {
     justify-content: center;
     margin-left: 100px;
     margin-bottom: 150px;
+  }
+}
+.body-video .title {
+  text-decoration: underline;
+}
+
+.video {
+  width: 85%;
+  display: flex;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 350px;
+}
+
+@media (min-width: 600px) {
+  .body-video {
+    margin-bottom: 450px;
+  }
+}
+@media (min-width: 1024px) {
+  .body-video {
+    margin-left: 200px;
+    margin-top: 100px;
+    margin-bottom: 200px;
+  }
+  .video {
+    margin-left: 0;
+    margin-bottom: 0;
   }
 }
 html,

@@ -20,7 +20,8 @@ footer {
 .menu__reseau {
     list-style: none;
     padding: 10px;
-    margin: 0 10px;
+    margin: 0 10px 0px;
+
 }
 
 .svg__reseau:hover {
@@ -39,11 +40,14 @@ footer {
     color: #004F2D;
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     margin-bottom: 20px;
     font-family: "forma-djr-micro", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 16px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .logodwm {
@@ -54,6 +58,10 @@ footer {
     color: #004F2D;
     font-size: 18px;
     text-decoration: none;
+    margin-left: 20px;
+    margin-right: 20px;
+
+
 }
 
 .link:hover {
