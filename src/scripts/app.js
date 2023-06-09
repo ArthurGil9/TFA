@@ -99,16 +99,7 @@ gsap.to(".para-gauche", {
   },
 });
 
-gsap.to(".velo-vert", {
-  yPercent: 100,
-  ease: "none",
-  scrollTrigger: {
-    trigger: "header",
-    start: "bottom top",
-    end: "footer",
-    scrub: true,
-  },
-});
+
 
 
 const myButton = document.getElementById('myButton');
@@ -158,6 +149,8 @@ const swiper = new Swiper('.swiper-container', {
   },
 
 });
+
+
 
 
 

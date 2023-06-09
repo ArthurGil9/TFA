@@ -2197,6 +2197,9 @@ footer {
     margin-bottom: 150px;
   }
 }
+.body-video {
+  margin-bottom: 150px;
+}
 .body-video .title {
   text-decoration: underline;
 }
@@ -2206,12 +2209,14 @@ footer {
   display: flex;
   margin: auto;
   margin-top: 40px;
-  margin-bottom: 350px;
 }
 
 @media (min-width: 600px) {
   .body-video {
-    margin-bottom: 450px;
+    margin-bottom: 350px;
+  }
+  .body-video .video {
+    margin-bottom: 50px;
   }
 }
 @media (min-width: 1024px) {
@@ -2219,9 +2224,14 @@ footer {
     margin-left: 200px;
     margin-top: 100px;
     margin-bottom: 200px;
+    width: 30%;
+  }
+  .body-video div {
+    display: flex;
+    justify-content: space-between;
   }
   .video {
-    margin-left: 0;
+    margin-left: 25px;
     margin-bottom: 0;
   }
 }

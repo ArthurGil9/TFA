@@ -1,4 +1,6 @@
 .body-video {
+    margin-bottom: 150px;
+
     .title {
         text-decoration: underline;
     }
@@ -9,12 +11,15 @@
     display: flex;
     margin: auto;
     margin-top: 40px;
-    margin-bottom: 350px;
 }
 
 @media (min-width: 600px) {
     .body-video {
-        margin-bottom: 450px;
+        margin-bottom: 350px;
+
+        .video {
+            margin-bottom: 50px;
+        }
     }
 }
 
@@ -25,10 +30,16 @@
         margin-left: 200px;
         margin-top: 100px;
         margin-bottom: 200px;
+        width: 30%;
+
+        div {
+            display: flex;
+            justify-content: space-between;
+        }
     }
 
     .video {
-        margin-left: 0;
+        margin-left: 25px;
         margin-bottom: 0;
     }
 }
