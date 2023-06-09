@@ -41,7 +41,7 @@
 
   <script src="scripts/app.js" defer></script>
 
-  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
 
 
 
@@ -81,13 +81,13 @@
 
       <ul class="nav__menu burger__close">
 
-        <li class="nav__menu__el"><a href="#comprendre">Comprendre</a></li>
+        <li data-nav="comprendre" class="nav__menu__el"><a class="smooth-link" href="#comprendre">Comprendre</a></li>
 
-        <li class="nav__menu__el"><a href="#secu">Ensemble</a></li>
+        <li data-nav="secu" class="nav__menu__el"><a class="smooth-link" href="#secu">Ensemble</a></li>
 
-        <li class="nav__menu__el"><a href="#fonc">Fonctionnalités</a></li>
+        <li data-nav="fonc" class="nav__menu__el"><a class="smooth-link" href="#fonc">Fonctionnalités</a></li>
 
-        <li class="nav__menu__el"><a href="#passe">Passé / Futur</a></li>
+        <li data-nav="passe" class="nav__menu__el"><a class="smooth-link" href="#passe">Passé / Futur</a></li>
 
       </ul>
 
@@ -218,12 +218,11 @@
             </div>
           </div>
         </div>
-
       </div>
 
       <div class="fond-idee">
-        <span class="km">KM2</span>
-        <h2 id="secu" class="title title-sec">Une sécurité collective</h2>
+        <span id="secu" class="km">KM2</span>
+        <h2 class="title title-sec">Une sécurité collective</h2>
 
         <div class="section-idee">
           <h3 class="title title-tert">Mon&nbsp;idée</h3>
@@ -328,9 +327,10 @@
       </div>
 
 
-      <span class="km">KM3</span>
+      <span id="fonc" class="km">KM3</span>
       <div class="section-fonc">
-        <div id="fonc">
+
+        <div>
           <h2 class="title title-sec">Les fonctionnalités et signalements</h2>
 
           <p class="p-fonc">PathMate permettra à ses utilisateurs de signaler en temps réel les obstacles, les

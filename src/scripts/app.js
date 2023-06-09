@@ -27,10 +27,31 @@ function Menuburger() {
 
 }
 
+
+
+const smoothLinks = document.querySelectorAll('.smooth-link');
+
+smoothLinks.forEach(link => {
+  link.addEventListener('click', smoothScroll);
+});
+
+function smoothScroll(e) {
+  e.preventDefault();
+
+  const targetId = this.getAttribute('href');
+  const targetElement = document.querySelector(targetId);
+  targetElement.scrollIntoView({
+    behavior: 'smooth'
+  });
+}
+
+
+
+
 if (document.getElementById("cookiePopup")) {
 
   if (!getCookie("popupAccepted")) {
-    $
+
     function showPopup() {
       var popup = document.getElementById("cookiePopup");
       popup.style.display = "block";
@@ -38,10 +59,9 @@ if (document.getElementById("cookiePopup")) {
 
     setTimeout(showPopup, 1500);
 
-    $
     var acceptBtn = document.getElementById("acceptBtn");
     var rejectBtn = document.getElementById("rejectBtn");
-    $
+
     acceptBtn.addEventListener("click", acceptCookies);
     rejectBtn.addEventListener("click", rejectCookies);
   }
@@ -87,6 +107,8 @@ function getCookie(name) {
 }
 
 
+
+
 gsap.to(".para-gauche", {
 
   scrollTrigger: {
@@ -98,6 +120,7 @@ gsap.to(".para-gauche", {
     toggleActions: "play none play none"
   },
 });
+
 
 
 
@@ -133,6 +156,8 @@ function reveal() {
 }
 
 window.addEventListener("scroll", reveal);
+
+
 
 
 
