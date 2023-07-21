@@ -24,13 +24,6 @@
     }
 }
 
-.flèche {
-    display: flex;
-    align-items: center;
-    width: 150%;
-}
-
-
 .swiper-slide {
     background-color: #FFFCF5;
     border-radius: 25px;
@@ -38,6 +31,10 @@
     align-items: center;
     box-shadow: #CCB67A 3px 3px 3px;
 
+}
+
+.grid-fonc {
+    margin-top: 50px;
 }
 
 .h4-fonc {
@@ -52,11 +49,11 @@
 }
 
 .p-fonc1 {
-    margin-top: 75px;
+    margin-top: 50px;
 }
 
 .p-fonc2 {
-    padding-bottom: 75px;
+    padding-bottom: 100px;
 }
 
 .swiper-pagination {
@@ -120,8 +117,8 @@
 @media (min-width: 1024px) {
 
     .fond-fonc1 {
-        height: 800px;
-        padding-top: 50px;
+        height: 600px;
+        margin-top: 75px;
     }
 
     .swiper-container {
@@ -146,7 +143,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 50px;
-        margin-left: 200px;
+        margin-left: 50px;
         margin-right: 75px;
 
         p {
@@ -156,13 +153,14 @@
     }
 
     .fond-fonc2 {
-        margin-top: 100px;
+        margin-top: 0px;
 
         p {
             max-width: 500px;
             display: block;
             margin-left: auto;
             margin-right: auto;
+            padding-bottom: 50px;
         }
     }
 
@@ -182,8 +180,12 @@
 @media (min-width: 1200px) {
 
     .fond-fonc1 {
-        height: 800px;
-        padding-top: 100px;
+        height: 20px;
+        height: 550px;
+    }
+
+    .fond-fonc2 {
+        padding-bottom: 50px;
     }
 
 
@@ -192,15 +194,14 @@
 @media (min-width: 1400px) {
 
     .fond-fonc1 {
-        height: 600px;
-        padding-top: 100px;
+        height: 500px;
     }
 
     .grid-fonc {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 100px;
-        margin-left: 200px;
+        margin-left: 50px;
         margin-right: 75px;
 
         p {
@@ -210,8 +211,9 @@
     }
 
     .swiper-container-fonc {
-        margin-left: 200px;
+        margin-left: 100px;
         margin-right: 75px;
+        margin-bottom: 0;
 
         .swiper-fonc {
             max-width: 29%;
@@ -222,7 +224,8 @@
     }
 
     .fond-fonc2 {
-        margin-top: 150px;
+        margin-top: 100px;
+        padding-bottom: 100px;
 
         p {
             max-width: 600px;
@@ -230,6 +233,14 @@
             margin-left: auto;
             margin-right: auto;
         }
+    }
+
+    .p-fonc-1 {
+        margin-top: 0;
+    }
+
+    .p-fonc-2 {
+        margin-top: 0;
     }
 }
 
@@ -244,7 +255,7 @@
     }
 
     .grid-fonc {
-        margin-left: 200px;
+        margin-left: 50px;
         margin-right: 75px;
 
 
