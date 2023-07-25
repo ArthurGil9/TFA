@@ -12,20 +12,29 @@
 @import 'components/page-fonc';
 @import 'components/grille';
 @import 'components/section-fonc';
-@import 'components/cookie';
+
 @import 'components/page-uikit';
 @import 'components/credit';
 @import 'components/video';
 
 @import '../../node_modules/swiper/swiper-bundle.css';
 
+
+
 html,
 body {
     margin: 0;
+
 }
 
 body {
     background-color: #FCF4DF;
+}
+
+.container-max {
+    max-width: 1801px;
+    margin: 0 auto;
+
 }
 
 header {
@@ -35,6 +44,7 @@ header {
     align-items: center;
     justify-content: center;
     z-index: 200;
+
 }
 
 .reveal {
@@ -43,9 +53,11 @@ header {
     transition: 1s all ease;
 }
 
-.reveal.act {
-    transform: translateY(0);
+
+.reveal.act,
+.reveal.revealed {
     opacity: 1;
+    transform: translateY(0);
 }
 
 
@@ -61,10 +73,36 @@ header {
         }
     }
 
-
-
-
     header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 0;
+        background-color: #004F2D;
+        height: 100vh;
+        width: 150px;
+        z-index: 200;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border-bottom-right-radius: 200px;
+        margin-bottom: 75px;
+    }
+
+
+    .title-header {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+
+
+
+    /*header {
 
         position: absolute;
         top: 0px;
@@ -88,9 +126,9 @@ header {
             margin-right: auto;
         }
 
-    }
+    }*/
 
-    .mini-logo {
+    /*.mini-logo {
         top: 200px;
         left: 50px;
         width: fit-content;
@@ -101,7 +139,7 @@ header {
         path {
             stroke: #E7C06A;
         }
-    }
+    }*/
 }
 
 @media (min-width: 1400px) {}

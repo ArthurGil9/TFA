@@ -8,24 +8,38 @@ gsap.registerPlugin(ScrollTrigger);
 
 
 
-var BurgOpenElement = document.querySelector(".burger__close");
+const burgerButton = document.querySelector(".burger");
+const menu = document.querySelector(".nav__menu");
+const navLinks = document.querySelectorAll(".nav__lien");
+const menuItems = document.querySelectorAll('.nav__el');
 
-var BurgElement = document.querySelector(".burger__lines");
-
-var BurgNav = document.querySelector(".nav__menu");
-
-BurgElement.addEventListener("click", Menuburger);
-
-BurgNav.addEventListener("click", Menuburger);
-
-
-function Menuburger() {
-
-  BurgOpenElement.classList.toggle("burger__close");
-
-  BurgElement.classList.toggle("burger__lines__croix");
-
+function toggleMenu() {
+  menu.classList.toggle("switch");
+  burgerButton.classList.toggle('active');
 }
+
+function closeMenu() {
+  menu.classList.remove("switch");
+  burgerButton.classList.remove('active');
+}
+
+if (burgerButton) {
+  burgerButton.addEventListener("click", toggleMenu);
+
+  navLinks.forEach(link => {
+    link.addEventListener("click", closeMenu);
+  });
+}
+
+function animateMenuItems() {
+  menuItems.forEach((item, index) => {
+    setTimeout(() => {
+      item.classList.add('slide-in');
+    }, index * 100);
+  });
+}
+animateMenuItems();
+
 
 
 
@@ -48,7 +62,7 @@ function smoothScroll(e) {
 
 
 
-if (document.getElementById("cookiePopup")) {
+/*if (document.getElementById("cookiePopup")) {
 
   if (!getCookie("popupAccepted")) {
 
@@ -104,7 +118,7 @@ function getCookie(name) {
     }
   }
   return null;
-}
+}*/
 
 
 
@@ -123,23 +137,7 @@ gsap.to(".para-gauche", {
 
 
 
-
-
-const myButton = document.getElementById('myButton');
-const transitionOverlay = document.querySelector('.transition-overlay');
-
-if (myButton && transitionOverlay) {
-  myButton.addEventListener('click', function () {
-
-    transitionOverlay.classList.add('active');
-
-    setTimeout(function () {
-      window.location.href = 'fonctionnalités.html';
-    }, 750);
-  });
-}
-
-function reveal() {
+/*function reveal() {
   var reveals = document.querySelectorAll(".reveal");
 
   for (var i = 0; i < reveals.length; i++) {
@@ -155,7 +153,32 @@ function reveal() {
   }
 }
 
+window.addEventListener("scroll", reveal);*/
+
+function reveal() {
+  var reveals = document.querySelectorAll(".reveal");
+
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 150;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("act");
+    } else {
+      reveals[i].classList.remove("act");
+    }
+
+    // Ajoute la classe .revealed une fois que l'élément est révélé
+    if (reveals[i].classList.contains("act")) {
+      reveals[i].classList.add("revealed");
+    }
+  }
+}
+
 window.addEventListener("scroll", reveal);
+
+
 
 
 

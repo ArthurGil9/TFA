@@ -12,6 +12,7 @@
   margin-top: 0;
   margin-right: 0;
   margin-bottom: 0;
+  margin-left: 0;
   font-family: "kallisto", sans-serif;
   font-weight: 800;
   font-style: normal;
@@ -69,7 +70,7 @@ p {
 }
 
 .p--intro {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 25px;
 }
 
@@ -172,7 +173,7 @@ a {
 @media (min-width: 1024px) {
   .p--intro {
     margin: 15px;
-    font-size: 22px;
+    font-size: 20px;
   }
 
   .title--prin {
@@ -222,7 +223,7 @@ a {
 @media (min-width: 1400px) {
   .p--intro {
     margin: 15px;
-    font-size: 25px;
+    font-size: 22px;
     line-height: 1.5;
 
   }
