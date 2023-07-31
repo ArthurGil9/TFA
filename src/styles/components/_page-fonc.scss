@@ -66,6 +66,34 @@
     background-color: #004F2D;
 }
 
+mark {
+    background: linear-gradient(90deg, #E7C06A 50%, rgba(255, 255, 255, 0) 50%);
+    background-size: 200% 100%;
+}
+
+.highlight {
+    animation: 2s highlight;
+    /* Conserver la position de l'arrière-plan après l'animation */
+    background-position: 0% 100%;
+}
+
+@keyframes highlight {
+    0% {
+        background-position: 100% 0;
+    }
+
+    100% {
+        /* Conserver la position de l'arrière-plan après l'animation */
+        background-position: 0% 100%;
+    }
+}
+
+
+
+
+
+
+
 
 @media (min-width: 600px) {
     .fonc-logo {
@@ -160,7 +188,7 @@
             display: block;
             margin-left: auto;
             margin-right: auto;
-            padding-bottom: 50px;
+            margin-bottom: 75px;
         }
     }
 
@@ -172,6 +200,7 @@
 
     .p-fonc2 {
         font-size: 24px;
+
     }
 
 
@@ -225,7 +254,7 @@
 
     .fond-fonc2 {
         margin-top: 100px;
-        padding-bottom: 100px;
+        padding-bottom: 150px;
 
         p {
             max-width: 600px;

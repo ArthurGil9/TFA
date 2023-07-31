@@ -43,6 +43,45 @@ animateMenuItems();
 
 
 
+window.addEventListener('DOMContentLoaded', function () {
+  const menuItems = document.querySelectorAll('.nav__menu .nav__el a');
+
+  function handleScroll() {
+    const sections = document.querySelectorAll('section');
+    // Remplacez 'section' par le sélecteur de vos sections
+    const currentScroll = window.scrollY;
+
+    let currentSectionId = null;
+
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop - 100; // Pour ajuster le déclenchement du changement de section (optionnel)
+      const sectionBottom = sectionTop + section.offsetHeight;
+
+      if (currentScroll >= sectionTop && currentScroll < sectionBottom) {
+        currentSectionId = section.getAttribute('id');
+      }
+    });
+
+
+
+    // Mettre à jour la classe 'actif' sur le lien du menu correspondant à la section active
+    menuItems.forEach(item => {
+      item.classList.remove('actif');
+      if (item.getAttribute('href') === `#${currentSectionId}`) {
+        item.classList.add('actif');
+      }
+    });
+  }
+
+  // Appeler la fonction handleScroll lors du défilement de la page
+  window.addEventListener('scroll', handleScroll);
+});
+
+
+
+
+
+
 const smoothLinks = document.querySelectorAll('.smooth-link');
 
 smoothLinks.forEach(link => {
@@ -128,32 +167,14 @@ gsap.to(".para-gauche", {
   scrollTrigger: {
     pin: ".pin",
     trigger: ".para-gauche",
-    start: "-25px top",
+    start: "-100px top",
     endTrigger: ".para-droite",
-    end: "bottom 60%",
+    end: "bottom 70%",
     toggleActions: "play none play none"
   },
 });
 
 
-
-/*function reveal() {
-  var reveals = document.querySelectorAll(".reveal");
-
-  for (var i = 0; i < reveals.length; i++) {
-    var windowHeight = window.innerHeight;
-    var elementTop = reveals[i].getBoundingClientRect().top;
-    var elementVisible = 150;
-
-    if (elementTop < windowHeight - elementVisible) {
-      reveals[i].classList.add("act");
-    } else {
-      reveals[i].classList.remove("act");
-    }
-  }
-}
-
-window.addEventListener("scroll", reveal);*/
 
 function reveal() {
   var reveals = document.querySelectorAll(".reveal");
@@ -199,23 +220,49 @@ const swiper = new Swiper('.swiper-container', {
 });
 
 
-/*var swiper2 = new swiper2(".mySwiper", {
-  effect: "coverflow",
-  grabCursor: true,
-  centeredSlides: true,
-  slidesPerView: "auto",
-  coverflowEffect: {
-    rotate: 50,
-    stretch: 0,
-    depth: 100,
-    modifier: 1,
-    slideShadows: false,
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-});*/
+// Get the bike container element
+/*const bikeContainer = document.getElementById("bikeContainer");
+
+// Function to handle the scroll event
+function handleScroll() {
+  // Calculate the offset based on the scroll position and adjust the bike's position
+  const scrollOffset = window.scrollY;
+  bikeContainer.style.left = scrollOffset + "px";
+}
+
+// Attach the scroll event listener to the window
+window.addEventListener("scroll", handleScroll);*/
+
+function isElementInViewport(el) {
+  const rect = el.getBoundingClientRect();
+  return (
+    rect.top >= 0 &&
+    rect.left >= 0 &&
+    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+  );
+}
+
+// Fonction pour ajouter la classe "highlight" aux éléments visibles lors du scroll
+function handleScrollAnimation() {
+  const highlightedElements = document.querySelectorAll(".highlight-once");
+
+  highlightedElements.forEach(function (element) {
+    if (isElementInViewport(element)) {
+      element.classList.add("highlight");
+    }
+  });
+}
+
+// Attendre que le contenu de la page soit chargé
+document.addEventListener("DOMContentLoaded", function () {
+  // Lancer l'animation au scroll
+  window.addEventListener("scroll", handleScrollAnimation);
+});
+
+
+
+
 
 
 

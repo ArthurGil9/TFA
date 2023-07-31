@@ -53,22 +53,6 @@
 <body class="body-acc">
   <header>
 
-    <!-- <nav class="menu-page">
-
-      <button class="burger__lines">
-
-        <span class="burger__line"></span>
-
-        <span class="burger__line burger__line--rotate"></span>
-
-        <span class="burger__line burger__line--none"></span>
-
-      </button>
-
-
-
-    </nav>-->
-
     <nav class="nav" id="top">
       <ul class="nav__icones">
         <li class="icones__el">
@@ -76,7 +60,7 @@
         </li>
       </ul>
       <ul class="nav__menu">
-        <li class="nav__el"><a class="lien nav__lien actif" href="#comprendre">Comprendre</a></li>
+        <li class="nav__el"><a class="lien nav__lien" href="#comprendre">Comprendre</a></li>
         <li class="nav__el"><a class="lien nav__lien" href="#secu">Ensemble</a></li>
         <li class="nav__el"><a class="lien nav__lien" href="#fonc">Fonctionnalités</a></li>
         <li class="nav__el"><a class="lien nav__lien" href="#passe">Passé / Futur</a></li>
@@ -84,475 +68,580 @@
     </nav>
 
     <div>
-      <a class="title title-header" href="index.html">PathMate</a>
-      <svg class="mini-logo" xmlns="http://www.w3.org/2000/svg" width="38.148" height="41.08">
-        <path fill="none" stroke="#004f2d" stroke-miterlimit="10"
-          d="m26.423 6.305 1.414.817a1.621 1.621 0 0 1-.157-.077c-.103-.053-.198-.107-.301-.16a.251.251 0 0 0 .081.077c.204.124.416.233.61.373a10.7 10.7 0 0 1 .864.688c.31.273.614.556.893.855a11.3 11.3 0 0 1 1.41 1.824 12.516 12.516 0 0 1 .84 1.604 12.1 12.1 0 0 1 .652 1.906 12.447 12.447 0 0 1 .335 2.301 11.4 11.4 0 0 1-.533 4.139c-.104.322-.231.632-.35.953a10.669 10.669 0 0 1-.69 1.413 9.782 9.782 0 0 1-.757 1.144 14.993 14.993 0 0 1-1.097 1.3 18.529 18.529 0 0 1-1.894 1.751 25.929 25.929 0 0 1-3.075 2.137c-.864.519-1.756.971-2.651 1.429-.452.23-.92.436-1.385.637-.792.344-1.582.696-2.385 1.005-.991.38-1.996.732-3 1.068-.68.228-1.368.416-2.059.61-.435.123-.874.252-1.322.348a1.052 1.052 0 0 1-1.27-.77 19.126 19.126 0 0 1-.19-.7 48.43 48.43 0 0 1-.44-1.9c-.148-.707-.274-1.415-.4-2.123q-.176-1.025-.33-2.053a50.142 50.142 0 0 1-.392-3.72 37.687 37.687 0 0 1-.102-3.322 25.139 25.139 0 0 1 .3-3.761 17.1 17.1 0 0 1 .892-3.433 10.618 10.618 0 0 1 .68-1.485c.171-.298.354-.589.542-.877a10.518 10.518 0 0 1 1.117-1.42 12.029 12.029 0 0 1 1.548-1.408 11.711 11.711 0 0 1 1.653-1.038 13.54 13.54 0 0 1 2.448-.962c.336-.094.682-.154 1.032-.22a12.307 12.307 0 0 1 1.516-.17 11.593 11.593 0 0 1 2.455.132 11.923 11.923 0 0 1 2.421.655 8.95 8.95 0 0 1 1.29.607c.028.016.065.03.09.045l.003-.005c-.094-.07-.2-.14-.306-.214Zm.046 13.164a5.869 5.869 0 1 0-8.127 1.81 5.786 5.786 0 0 0 8.127-1.81Z" />
-      </svg>
-    </div>
+      <div class="title-mobile">
+        <a class="title title-header " href="index.html">PathMate</a>
+        <svg class="mini-logo" xmlns="http://www.w3.org/2000/svg" width="38.148" height="41.08">
+          <path fill="none" stroke="#004f2d" stroke-miterlimit="10"
+            d="m26.423 6.305 1.414.817a1.621 1.621 0 0 1-.157-.077c-.103-.053-.198-.107-.301-.16a.251.251 0 0 0 .081.077c.204.124.416.233.61.373a10.7 10.7 0 0 1 .864.688c.31.273.614.556.893.855a11.3 11.3 0 0 1 1.41 1.824 12.516 12.516 0 0 1 .84 1.604 12.1 12.1 0 0 1 .652 1.906 12.447 12.447 0 0 1 .335 2.301 11.4 11.4 0 0 1-.533 4.139c-.104.322-.231.632-.35.953a10.669 10.669 0 0 1-.69 1.413 9.782 9.782 0 0 1-.757 1.144 14.993 14.993 0 0 1-1.097 1.3 18.529 18.529 0 0 1-1.894 1.751 25.929 25.929 0 0 1-3.075 2.137c-.864.519-1.756.971-2.651 1.429-.452.23-.92.436-1.385.637-.792.344-1.582.696-2.385 1.005-.991.38-1.996.732-3 1.068-.68.228-1.368.416-2.059.61-.435.123-.874.252-1.322.348a1.052 1.052 0 0 1-1.27-.77 19.126 19.126 0 0 1-.19-.7 48.43 48.43 0 0 1-.44-1.9c-.148-.707-.274-1.415-.4-2.123q-.176-1.025-.33-2.053a50.142 50.142 0 0 1-.392-3.72 37.687 37.687 0 0 1-.102-3.322 25.139 25.139 0 0 1 .3-3.761 17.1 17.1 0 0 1 .892-3.433 10.618 10.618 0 0 1 .68-1.485c.171-.298.354-.589.542-.877a10.518 10.518 0 0 1 1.117-1.42 12.029 12.029 0 0 1 1.548-1.408 11.711 11.711 0 0 1 1.653-1.038 13.54 13.54 0 0 1 2.448-.962c.336-.094.682-.154 1.032-.22a12.307 12.307 0 0 1 1.516-.17 11.593 11.593 0 0 1 2.455.132 11.923 11.923 0 0 1 2.421.655 8.95 8.95 0 0 1 1.29.607c.028.016.065.03.09.045l.003-.005c-.094-.07-.2-.14-.306-.214Zm.046 13.164a5.869 5.869 0 1 0-8.127 1.81 5.786 5.786 0 0 0 8.127-1.81Z" />
+        </svg>
+      </div>
+
+      <div class="link-path">
+        <a class="p-path title title-header title-mobile2" href="index.html">Path</a>
+        <section class="animation">
+          <div class="first">
+            <div class="title title-header">Mate </div>
+          </div>
+          <div class="second">
+            <div class=" title title-header">Mate</div>
+          </div>
+          <div class="third">
+            <div class=" title title-header">Mate</div>
+          </div>
+        </section>
+
+
+      </div>
+
+
 
   </header>
   <main>
-    <div class="body container-max">
+    <div class="border-container">
+      <div class="body container-max">
+
+        <div class="grid-accueil">
+
+          <div class="grid-accueil-2">
+            <h1 class="title title--prin"><span class="title-col">Ensemble,</span><br> en toute sécurité</h1>
+
+            <p class="p--intro">PathMate servira à connaître l'état des chemins forestiers grâce à la participation des
+              utilisateurs. Vous pourrez signaler les obstacles, les difficultés ou encore l'état du chemin. Vous
+              aiderez ainsi la communauté à éviter les mauvaises surprises et à choisir un itinéraire adapté.</p>
+            <p class="p--intro"> L’idée de cette application est née dans le cadre du projet pour notre TFA. Cette
+              landing
+              page servira donc à expliquer le processus de recherche.</p>
+          </div>
 
 
-      <!--<ul class="nav__menu burger__close">
+          <img class="img--arbre" src="assets/images/arbre.jpg" srcset="assets/images/arbre@2x.jpg 2x"
+            alt="Image d'un sentier bloqué par un arbre">
 
-        <li data-nav="comprendre" class="nav__menu__el"><a class="smooth-link" href="#comprendre">Comprendre</a></li>
+          <!--<div class="conteneur-velo">
+          <div class="velo">
+            <div class="bike">
+              <div class="wheel wheel__left">
+                <div class="spoke spoke__left--1"></div>
+                <div class="spoke spoke__left--2"></div>
+                <div class="hub"></div>
+              </div>
+              <div class="wheel wheel__right">
+                <div class="spoke spoke__right--1"></div>
+                <div class="spoke spoke__right--2"></div>
+                <div class="hub"></div>
+              </div>
+              <div class="fork"></div>
+              <div class="chainring"></div>
+              <div class="down-tube"></div>
+              <div class="top-tube"></div>
+              <div class="seat-tube"></div>
+              <div class="seat-stay"></div>
+              <div class="chain-stay"></div>
+              <div class="chain__upper"></div>
+              <div class="chain__bottom"></div>
+              <div class="saddle"></div>
+              <div class="handlebars"></div>
+            </div>
+          </div>
+        </div>-->
 
-        <li data-nav="secu" class="nav__menu__el"><a class="smooth-link" href="#secu">Ensemble</a></li>
 
-        <li data-nav="fonc" class="nav__menu__el"><a class="smooth-link" href="#fonc">Fonctionnalités</a></li>
-
-        <li data-nav="passe" class="nav__menu__el"><a class="smooth-link" href="#passe">Passé / Futur</a></li>
-
-      </ul>-->
-
-
-      <div class="grid-accueil">
-
-        <div class="grid-accueil-2">
-          <h1 class="title title--prin"><span class="title-col">Ensemble,</span><br> en toute sécurité</h1>
-
-          <p class="p--intro">PathMate servira à connaître l'état des chemins forestiers grâce à la participation des
-            utilisateurs. Vous pourrez signaler les obstacles, les difficultés ou encore l'état du chemin. Vous
-            aiderez ainsi la communauté à éviter les mauvaises surprises et à choisir un itinéraire adapté.</p>
-          <p class="p--intro"> L’idée de cette application est née dans le cadre du projet pour notre TFA. Cette
-            landing
-            page servira donc à expliquer le processus de recherche.</p>
         </div>
 
 
-        <img class="img--arbre" src="assets/images/arbre.jpg" srcset="assets/images/arbre@2x.jpg 2x"
-          alt="Image d'un sentier bloqué par un arbre">
+
+        <section id="comprendre" class="section-besoin">
+          <span class="km">KM1</span>
+
+          <div class="grid-besoin">
+
+            <div class="para-gauche">
+              <div class="pin">
+                <h2 class="title title-sec"> Comprendre les besoins</h2>
+                <p>Pour en arriver à cette idée, je me suis rapproché de la communauté pour comprendre leurs besoins et
+                  les aider au mieux. Pour cela, je me suis d’abord concentré sur les cyclistes, via différentes
+                  interviews et rencontres, notamment en roulant avec eux. J’ai pu rencontrer Arthur, Quentin, ou encore
+                  le club VTT d’Evrehailles. Ces rencontres furent riches en réponses intéressantes pour moi.</p>
+
+                <p>Après une mise en commun et une analyse des réponses obtenues, voici les problèmes les plus
+                  fréquemment
+                  rencontrés par les vététistes&nbsp;: </p>
+              </div>
+            </div>
+
+            <div class="para-droite">
+              <div class="container">
+
+                <div>
+                  <img src="assets/images/prive.jpg" srcset="assets/images/prive@2x.jpg 2x"
+                    alt="Chemin bloqué par une barrière et un panneau propriété privée">
+                  <p>Chemin privé</p>
+                </div>
+
+                <div>
+                  <img src="assets/images/cailloux.jpg" srcset="assets/images/cailloux@2x.jpg 2x"
+                    alt="Image d'un sentier avec pleins de cailloux">
+                  <p>Chemin technique</p>
+                </div>
+
+                <div>
+                  <img src="assets/images/arbre.jpg" srcset="assets/images/arbre@2x.jpg 2x"
+                    alt="Image d'un sentier bloqué par un arbre tombé">
+                  <p>Arbre tombé</p>
+                </div>
+
+                <div>
+                  <img src="assets/images/panneau-chasse.jpg" srcset="assets/images/panneau-chasse@2x.jpg 2x"
+                    alt="Image d'un panneau chasse sur un arbre">
+                  <p>La chasse</p>
+                </div>
+                <div>
+                  <img src="assets/images/danger.jpg" srcset="assets/images/danger@2x.jpg 2x"
+                    alt="Image d'un sentier le long d'un ruisseau avec un petit ravin">
+                  <p>Chemin dangereux</p>
+                </div>
+
+                <div>
+                  <img src="assets/images/boue.jpg" srcset="assets/images/boue@2x.jpg 2x"
+                    alt="Image d'un sentier en mauvais état à cause de la boue">
+                  <p>État du chemin</p>
+                </div>
+              </div>
+              <p class="p-contenaire">J’ai constaté que certains problèmes n’étaient pas réservés aux vététistes mais
+                aussi à tous utilisateurs de chemins boisés. J’ai donc élargi mon panel d’utilisateurs pour le proposer
+                à
+                tous. </p>
+
+              <div class="container2">
+
+                <div>
+                  <img src="assets/images/randonneur.svg" alt="Icone représentant un randonneur">
+                  <p>Prommeneurs</p>
+                </div>
+
+                <div>
+                  <img src="assets/images/chasseur.svg" alt="Icone représentant un chasseur">
+                  <p>Chasseurs</p>
+                </div>
+
+                <div>
+                  <img src="assets/images/cycliste.svg" alt="Icone représentant un cycliste">
+                  <p>Cyclistes</p>
+                </div>
+
+                <div>
+                  <img src="assets/images/motard.svg" alt="Icone représentant un motard">
+                  <p>Motards</p>
+                </div>
+
+                <div>
+                  <img src="assets/images/ranger.svg" alt="Icone représentant un garde forestier">
+                  <p>Garde forestiers</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="secu">
+          <div class="fond-idee">
+            <span class="km">KM2</span>
+            <h2 class="title title-sec">Une sécurité collective</h2>
+
+            <div class="section-idee">
+              <h3 class="title title-tert">Mon&nbsp;idée</h3>
+
+              <p>Pour vous aider à éviter de passer par un itinéraire finalement bloqué, en mauvais état ou dangereux,
+                l’idée
+                est de créer une application qui vous permettrait de savoir en temps réel si les sentiers que vous
+                souhaitez
+                emprunter sont accessibles ou non. L'application permettrait à chaque utilisateur de signaler facilement
+                tout
+                problème rencontré en précisant où ils sont via géolocalisation. Les autres utilisateurs pourraient
+                alors
+                consulter la carte à tout moment pour constater le problème rencontré.</p>
+
+              <h3 class="title title-tert title-audit">Audit&nbsp;concurenciel</h3>
+              <p>J’ai remarqué que certaines applications du même principe existaient déjà et sont très
+                populaires, mais elles sont réservées aux automobilistes. Voici en quoi elles consistent et ce que j'en
+                retire, car oui, si elles sont populaire, c'est qu'elles ont de bonnes fonctionnalités : </p>
+            </div>
+
+            <div class="swiper-container reveal">
+              <div class="swiper-wrapper">
 
 
-      </div>
+                <div class="vignette-slider swiper-slide ">
+                  <div class="carte2"><img src="assets/images/logowaze.png" alt="Logo de l'application Waze"></div>
+                  <h4>Waze </h4>
+                  <p>Indique toutes les embûches présentes sur votre trajet comme les bouchons, les accidents ou encore
+                    les
+                    contrôles de police. Tout est basé sur la participation et la fidélisation des utilisateurs. </p>
+
+                </div>
 
 
+                <div class="vignette-slider swiper-slide ">
+                  <div class="carte2"><img src="assets/images/logocoyotte.png" alt="Logo de l'application Coyote"></div>
+                  <h4>Coyote </h4>
+                  <p>Indique les radars présents ou bien encore les perturbations sur la route. Fonctionne également
+                    avec
+                    la
+                    participation des utilisateurs pour signaler les radars. </p>
 
-      <div class="section-besoin">
-        <span class="km">KM1</span>
+                </div>
 
-        <div class="grid-besoin">
-
-          <div class="para-gauche">
-            <div id="comprendre" class="pin">
-              <h2 class="title title-sec"> Comprendre les besoins</h2>
-              <p>Pour en arriver à cette idée, je me suis rapproché de la communauté pour comprendre leurs besoins et
-                les aider au mieux. Pour cela, je me suis d’abord concentré sur les cyclistes, via différentes
-                interviews et rencontres, notamment en roulant avec eux. J’ai pu rencontrer Arthur, Quentin, ou encore
-                le club VTT d’Evrehailles. Ces rencontres furent riches en réponses intéressantes pour moi.</p>
-
-              <p>Après une mise en commun et une analyse des réponses obtenues, voici les problèmes les plus
-                fréquemment
-                rencontrés par les vététistes&nbsp;: </p>
+                <div class="vignette-slider swiper-slide">
+                  <div class="carte2"><img src="assets/images/logogooglemaps.png"
+                      alt="Logo de l'application Google Maps">
+                  </div>
+                  <h4>Google Maps</h4>
+                  <p>Calcule en temps réel la circulation et indique les bouchons sur votre trajet. Ne permet pas le
+                    signalement par les
+                    utilisateurs mais utilisent d'autres sources pour garder l'application en temps réel.</p>
+                </div>
+              </div>
             </div>
           </div>
 
-          <div class="para-droite">
-            <div class="container">
 
-              <div>
-                <img src="assets/images/prive.jpg" srcset="assets/images/prive@2x.jpg 2x"
-                  alt="Chemin bloqué par une barrière et un panneau propriété privée">
-                <p>Chemin privé</p>
+
+          <div class="section-comp">
+            <p class="section-comp-p">D’autres applications existent aussi pour les randonneurs et cyclistes par
+              exemple,
+              voici leurs utilités et
+              leurs
+              manques&nbsp;: </p>
+
+            <div class="contenaire">
+              <div class="vignette2 reveal">
+                <div class="carte2"><img src="assets/images/logostrava.png" alt="logo de l'application strava"></div>
+                <h4>Strava </h4>
+                <p>Permet de créer des itinéraires, d’enregistrer ses parcours et performances et de les partager avec
+                  la
+                  communauté, peut importe le sport que vous pratiquez. Strava ne permet donc pas de savoir si
+                  l’itinéraire est entièrement praticable.</p>
               </div>
 
-              <div>
-                <img src="assets/images/cailloux.jpg" srcset="assets/images/cailloux@2x.jpg 2x"
-                  alt="Image d'un sentier avec pleins de cailloux">
-                <p>Chemin technique</p>
-              </div>
-
-              <div>
-                <img src="assets/images/arbre.jpg" srcset="assets/images/arbre@2x.jpg 2x"
-                  alt="Image d'un sentier bloqué par un arbre tombé">
-                <p>Arbre tombé</p>
-              </div>
-
-              <div>
-                <img src="assets/images/panneau-chasse.jpg" srcset="assets/images/panneau-chasse@2x.jpg 2x"
-                  alt="Image d'un panneau chasse sur un arbre">
-                <p>La chasse</p>
-              </div>
-              <div>
-                <img src="assets/images/danger.jpg" srcset="assets/images/danger@2x.jpg 2x"
-                  alt="Image d'un sentier le long d'un ruisseau avec un petit ravin">
-                <p>Chemin dangereux</p>
-              </div>
-
-              <div>
-                <img src="assets/images/boue.jpg" srcset="assets/images/boue@2x.jpg 2x"
-                  alt="Image d'un sentier en mauvais état à cause de la boue">
-                <p>État du chemin</p>
-              </div>
-            </div>
-            <p class="p-contenaire">J’ai constaté que certains problèmes n’étaient pas réservés aux vététistes mais
-              aussi à tous utilisateurs de chemins boisés. J’ai donc élargi mon panel d’utilisateurs pour le proposer à
-              tous. </p>
-
-            <div class="container2">
-
-              <div>
-                <img src="assets/images/randonneur.svg" alt="Icone représentant un randonneur">
-                <p>Prommeneurs</p>
-              </div>
-
-              <div>
-                <img src="assets/images/chasseur.svg" alt="Icone représentant un chasseur">
-                <p>Chasseurs</p>
-              </div>
-
-              <div>
-                <img src="assets/images/cycliste.svg" alt="Icone représentant un cycliste">
-                <p>Cyclistes</p>
-              </div>
-
-              <div>
-                <img src="assets/images/motard.svg" alt="Icone représentant un motard">
-                <p>Motards</p>
-              </div>
-
-              <div>
-                <img src="assets/images/ranger.svg" alt="Icone représentant un garde forestier">
-                <p>Garde forestiers</p>
+              <div class="vignette2 reveal">
+                <div class="carte2"><img src="assets/images/logokomoot.png" alt="logo de l'application komoot"></div>
+                <h4>Komoot </h4>
+                <p>Elle permet aux utilisateurs de planifier des itinéraires personnalisés en fonction de leurs
+                  préférences
+                  et
+                  de leurs niveaux de forme physique. Lorsque vous créez votre parcours, vous ne savez donc pas si le
+                  chemin
+                  est
+                  réellement praticable.</p>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-
-      <div class="fond-idee">
-        <span id="secu" class="km">KM2</span>
-        <h2 class="title title-sec">Une sécurité collective</h2>
-
-        <div class="section-idee">
-          <h3 class="title title-tert">Mon&nbsp;idée</h3>
-
-          <p>Pour vous aider à éviter de passer par un itinéraire finalement bloqué, en mauvais état ou dangereux,
-            l’idée
-            est de créer une application qui vous permettrait de savoir en temps réel si les sentiers que vous
-            souhaitez
-            emprunter sont accessibles ou non. L'application permettrait à chaque utilisateur de signaler facilement
-            tout
-            problème rencontré en précisant où ils sont via géolocalisation. Les autres utilisateurs pourraient alors
-            consulter la carte à tout moment pour constater le problème rencontré.</p>
 
 
-
-
-          <h3 class="title title-tert title-audit">Audit&nbsp;concurenciel</h3>
-          <p>J’ai remarqué que certaines applications du même principe existaient déjà et sont très
-            populaires mais elles sont réservées aux automobilistes. En voici quelques exemples.</p>
-        </div>
-
-        <div class="swiper-container reveal">
-          <div class="swiper-wrapper">
-
-
-            <div class="vignette-slider swiper-slide ">
-              <div class="carte2"><img src="assets/images/logowaze.png" alt="Logo de l'application Waze"></div>
-              <h4>Waze </h4>
-              <p>Indique toutes les embûches présentes sur votre trajet comme les bouchons, les accidents ou encore
+          <div class="fond-audit">
+            <h3 class="title title-tert">Un audit qui&nbsp;confirme</h3>
+            <div>
+              <p>Ces applications et fonctionnalités sont très utiles et populaires, mais elles sont soit limitées aux
+                routes, soit ne
+                permettent pas d'interagir en direct. Pour ce qui est de Strava et Komoot, une fois votre parcours créé,
+                rien ne vous garantit que vous
+                saurez
+                l'emprunter. Actuellement, il n'existe donc pas d'application en temps réel pour les perturbations dans
                 les
-                contrôles de police. Se base sur les indications des utilisateurs. </p>
-
+                bois ou en campagne. C'est pour cela qu'en mélangeant les fonctionnalités des différentes applications,
+                comme l'intéraction en direct, le partage avec la communauté ou encore les différentes catégories de
+                problèmes, PathMate pourra résoudre ce manque.
+              </p>
+              <p class="p--audit">À noter que je suis également retourné vers certains des utilisateurs avec qui je
+                m'étais
+                entretenu pour leur expliquer brièvement mon idée. Ce retour vers eux m'a permis de valider
+                mon
+                idée, car les retours que j'ai obtenus ont été très positifs, avec une approbation globale. Ils m'ont
+                cependant incité à me tourner essentiellement vers la partie signalement en tout genre et à ne pas
+                développer la partie création d'itinéraire, comme j'avais en tête. Ce retour m'a donc également permis
+                de
+                me
+                concentrer sur l'essentiel.
+              </p>
             </div>
+          </div>
+        </section>
 
 
-            <div class="vignette-slider swiper-slide ">
-              <div class="carte2"><img src="assets/images/logocoyotte.png" alt="Logo de l'application Coyote"></div>
-              <h4>Coyote </h4>
-              <p>Indique les radars présents ou bien encore les perturbations sur la route. Fonctionne également avec
-                la
-                participation des utilisateurs pour signaler les radars. </p>
+        <section id="fonc">
+          <div class="fond-fonc1">
+            <span class="km">KM3</span>
 
-            </div>
+            <h2 class="title title-sec">Les fonctionnalités et signalements</h2>
 
+            <div class="grid-fonc">
 
-            <div class="vignette-slider swiper-slide">
-              <div class="carte2"><img src="assets/images/logogooglemaps.png" alt="Logo de l'application Google Maps">
+              <p class="p-fonc-1">Pour faire fonctionner l'application, chaque utilisateur aura la possibilité de
+                signaler
+                en temps réel et via une carte
+                interactive des
+                obstacles,
+                des difficultés ou l'état du chemin qu'il emprunte. Cela signifie que si vous rencontrez des problèmes
+                tels
+                que des arbres tombés en travers du chemin, des zones boueuses ou des endroits difficiles à traverser,
+                vous
+                pouvez les signaler à l’endroit même où vous vous trouvez pour aider les autres utilisateurs de
+                l'application
+                à
+                éviter ces obstacles. De même, si vous remarquez que le chemin est endommagé ou que des travaux sont en
+                cours,
+                vous pouvez également le signaler pour que les autres utilisateurs soient informés.
+              </p>
+              <div>
+                <p class="p-fonc-2">Si un autre membre de la communauté emprunte également ce chemin, il lui sera alors
+                  proposé de confirmer si l'information est toujours d'actualité ou non. S'il confirme, l'information
+                  reste
+                  d'actualité sinon, elle s'enlève. Il faudra donc compter sur la participation active mais honnête de
+                  tous les utilisateurs. </p>
               </div>
-              <h4>Google Maps</h4>
-              <p>Calcule en temps réel la circulation et indique les bouchons sur votre trajet.</p>
             </div>
           </div>
-        </div>
-      </div>
 
 
+          <div class="swiper-container swiper-container-fonc mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide swiper-fonc">
+                <img class="fonc-logo" src="assets/images/emotearbre.svg" alt="">
+                <h3 class="h4-fonc">Obstacle sur le chemin</h3>
+                <p>Si le promeneur rencontre un arbre tombé en travers du chemin, une branche cassée, une pierre qui
+                  bloque
+                  le passage ou tout autre obstacle.</p>
+              </div>
+              <div class="swiper-slide swiper-fonc">
+                <img class="fonc-logo" src="assets/images/falaise.svg" alt="">
+                <h3 class="h4-fonc">Zone à risque</h3>
+                <p>Si le promeneur repère des zones potentiellement dangereuses comme des falaises, des zones à risque
+                  d'avalanche ou des zones où il y a un risque de glissement de terrain, il peut également signaler ces
+                  zones pour avertir les autres utilisateurs de l'application.</p>
+              </div>
+              <div class="swiper-slide swiper-fonc">
+                <img class="fonc-logo" src="assets/images/chasse.svg" alt="">
+                <h3 class="h4-fonc">La chasse</h3>
+                <p>Si le promeneur constate que les chemins sont fermés à cause de la chasse, il peut l’indiquer aux
+                  autres
+                  utilisateurs. Cela pourrait notamment éviter les accidents.</p>
+              </div>
+              <div class="swiper-slide swiper-fonc">
+                <img class="fonc-logo" src="assets/images/boue.svg" alt="">
+                <h3 class="h4-fonc">État du chemin</h3>
+                <p>Si le chemin est boueux, glissant ou difficile à traverser, le promeneur peut signaler cette
+                  information
+                  aux autres utilisateurs de l'application pour qu'ils soient prêts et équipés en conséquence ou bien
+                  qu’ils
+                  adaptent leurs itinéraires.</p>
+              </div>
+              <div class="swiper-slide swiper-fonc">
+                <img class="fonc-logo" src="assets/images/animaux.svg" alt="">
+                <h3 class="h4-fonc">Présence d'animaux</h3>
+                <p>Si le promeneur remarque la présence d'animaux sauvages, comme des sangliers, il peut signaler cette
+                  information aux autres utilisateurs pour leur sécurité.</p>
+              </div>
+              <div class="swiper-slide swiper-fonc">
+                <img class="fonc-logo" src="assets/images/ferme.svg" alt="">
+                <h3 class="h4-fonc">Chemin fermé</h3>
+                <p>Si le promeneur constate qu’un chemin initialement ouvert à tous est fermé pour une quelconque
+                  raison,
+                  il
+                  peut le signaler.</p>
+              </div>
+              <div class="swiper-slide swiper-fonc">
+                <img class="fonc-logo" src="assets/images/lieu.svg" alt="">
+                <h3 class="h4-fonc">Point d'intérêt</h3>
+                <p>Si le promeneur découvre des points d'intérêt tels que des points de vue, des cascades ou des lacs,
+                  il
+                  peut partager ces informations pour permettre aux autres utilisateurs de profiter pleinement de leur
+                  expérience de la nature.</p>
+              </div>
 
-      <div class="section-comp">
-        <p class="section-comp-p">D’autres applications existent aussi pour les randonneurs et cyclistes par exemple,
-          voici leurs utilités et
-          leurs
-          manques&nbsp;: </p>
-
-        <div class="contenaire">
-          <div class="vignette2 reveal">
-            <div class="carte2"><img src="assets/images/logostrava.png" alt="logo de l'application strava"></div>
-            <h4>Strava </h4>
-            <p>Permet de créer des itinéraires, d’enregistrer ses parcours et performances et de les partager avec la
-              communauté. Strava ne permet donc pas de savoir si l’itinéraire est entièrement praticable.</p>
+            </div>
+            <div class="swiper-pagination"></div>
           </div>
 
-          <div class="vignette2 reveal">
-            <div class="carte2"><img src="assets/images/logokomoot.png" alt="logo de l'application komoot"></div>
-            <h4>Komoot </h4>
-            <p>Elle permet aux utilisateurs de planifier des itinéraires personnalisés en fonction de leurs
-              préférences
-              et
-              de leurs niveaux de forme physique. Lorsque vous créez votre parcours, vous ne savez donc pas si le
-              chemin
-              est
-              réellement praticable.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="fond-audit">
-        <h3 class="title title-tert">Un audit qui&nbsp;confirme</h3>
-        <div>
-          <p>Ces applications et fonctionnalités sont très utiles, mais elles sont soit limitées aux routes, soit ne
-            permettent pas d'interagir en direct. Une fois votre parcours créé, rien ne vous garantit que vous saurez
-            l'emprunter. Actuellement, il n'existe donc pas d'application en temps réel pour les perturbations dans les
-            bois ou en campagne.
-          </p>
-          <p class="p--audit">À noter que je suis également retourné vers certains des utilisateurs avec qui je m'étais
-            entretenu pour leur expliquer brièvement mon idée. Ce retour vers les utilisateurs a permis de valider mon
-            idée, car les retours que j'ai obtenus ont été très positifs, avec une approbation globale. Ils m'ont
-            cependant incité à me tourner essentiellement vers la partie signalement en tout genre et à ne pas
-            développer la partie création d'itinéraire, comme j'avais en tête. Ce retour m'a donc également permis de me
-            concentrer sur l'essentiel.
-          </p>
-        </div>
-      </div>
+          <script>
+            var swiper = new Swiper(".mySwiper", {
+              effect: "coverflow",
+              grabCursor: true,
+              centeredSlides: true,
+              slidesPerView: "auto",
+              coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: false,
+              },
+              pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+              },
+              autoplay: {
+                delay: 6000,
+                disableOnInteraction: false,
+              },
+            });
+          </script>
 
 
-    
-      <div class="fond-fonc1">
-        <span id="fonc" class="km">KM3</span>
 
-        <h2 class="title title-sec">Les fonctionnalités et signalements</h2>
-
-        <div class="grid-fonc">
-
-          <p class="p-fonc-1">Chaque utilisateur aura la possibilité de signaler en temps réel et via une carte
-            interactive des
-            obstacles,
-            des difficultés ou l'état du chemin que vous empruntez. Cela signifie que si vous rencontrez des problèmes
-            tels
-            que des arbres tombés en travers du chemin, des zones boueuses ou des endroits difficiles à traverser, vous
-            pouvez les signaler à l’endroit même où vous vous trouvez pour aider les autres utilisateurs de
-            l'application
-            à
-            éviter ces obstacles. De même, si vous remarquez que le chemin est endommagé ou que des travaux sont en
-            cours,
-            vous pouvez également le signaler pour que les autres utilisateurs soient informés.
-          </p>
-          <div>
-            <p class="p-fonc-2">Si un autre membre de la communauté emprunte également ce chemin, il lui sera alors
-              proposé de confirmer si l'information est toujours d'actualité ou non. S'il confirme, l'information reste
-              d'actualité sinon, elle s'enlève. Il faudra donc compter sur la participation active mais honnête de
-              tous les utilisateurs. </p>
-            <p>Prévenir la communauté est particulièrement utile pour les promeneurs, les randonneurs, les coureurs ou
-              encore les cyclistes qui peuvent ainsi éviter les obstacles et les dangers potentiels tout en profitant
-              pleinement de leur expérience dans la nature, sans danger ni désagrément. Ces fonctionnalités peuvent
-              également être utiles pour les chasseurs et les gardes forestiers, qui peuvent ainsi mieux planifier leurs
-              activités et assurer la sécurité de tous.
+          <div class="fond-fonc2">
+            <p class="p-fonc1">Il sera donc possible de fournir une indication à l’endroit même où nous nous trouvons
+              à ce
+              moment ou bien pour une zone complète, comme pour les chasses. Cela dépendra de l’élément à signaler.
             </p>
+
+
+            <p class="p-fonc2 scroll-highlight"><strong><mark class=" highlight-once"> Ces signalements aideront la
+                  communauté à rendre les bois
+                  et
+                  campagnes plus
+                  sûr et
+                  agréables pour tous. </mark></strong></p>
+
+
+
           </div>
-        </div>
+
+        </section>
+
+        <section>
+          <section class="section-passe" id="passe">
+
+            <span class="km">KM4</span>
+            <h2 class="title title-sec title-pass">Une explication du passé</h2>
+
+            <div class="grid-passe">
+              <p class="p-passe-1"> Pour débuter, j'ai pris la décision de choisir la catégorie d'utilisateur des
+                vététistes, car je fais partie de cette communauté et je rencontre souvent des problèmes lors de mes
+                sorties. J'ai donc réalisé qu'il y avait de nombreux défis à relever dans ce domaine.
+
+                Cependant, le premier problème que j'ai rencontré a justement été cette connaissance du milieu. Au
+                début,
+                je
+                suis resté trop attaché à mon idée de base, qui était de permettre aux utilisateurs de créer leur
+                itinéraire en fonction de leurs envies. Malheureusement,
+                cette idée n'a pas porté ses fruits car il existe déjà des applications du même genre, et cela n'allait
+                pas résoudre véritablement leurs problèmes.
+              </p>
+
+              <p>
+                Je me suis donc recentré sur mes utilisateurs en laissant de côté mon idée initiale, car je me suis
+                rendu
+                compte que la solution devait venir d'eux. Grâce aux entretiens que j'ai menés, j'ai pu dresser une
+                liste
+                de problèmes qu'ils rencontrent fréquemment lors de leurs sorties. En y réfléchissant, j'ai constaté que
+                la majorité de ces problèmes étaient liés à l'incertitude sur l'état des sentiers. Les conditions des
+                chemins évoluent constamment car les bois ne dorment jamais, et d'un jour à l'autre, un sentier peut
+                être
+                bloqué ou dégradé, ce qui rend
+                leur pratique difficile.
+              </p>
+
+              <p>
+                L'idée m'est alors venue de créer une application avec des signalements en direct. La suite du
+                développement de cette idée a été plus simple pour moi, car je "connaissais" les envies et besoins des
+                vététistes pour améliorer ces problèmes. Finalement, mes utilisateurs se sont élargis, car après en
+                avoir
+                discuté avec des randonneurs, je pense que l'application pourrait être bénéfique à tout le monde.
+              </p>
+
+
+
+              <img class="reveal" src="assets/images/IMG_5871.jpg" srcset="assets/images/IMG_5871@2x.jpg 2x"
+                alt="Photo de deux cycliste entrain de préparer leurs vélos">
+            </div>
+          </section>
+
+          <section class="div-futur" id="passe">
+
+            <span class="km">KM5</span>
+
+            <div class="div-futur-2">
+              <div>
+                <h2 class="title title-sec">Une idée pour le futur</h2>
+
+                <p>Pour notre projet, nous devons parler en notre personne pour décrire nos idées et recherches, mais
+                  j’ai
+                  imaginé
+                  un instant que l’application était déjà en ligne et que je devais convaincre des utilisateurs. Voici
+                  un
+                  extrait
+                  qui pourrait servir de pub ou sur le site de présentation de la (peut-être) future application&nbsp;:
+                </p>
+              </div>
+
+              <svg class="logoPM" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#004f2d"
+                  d="M195.863 52.58v3.458l.129 117.223c0 8.012-.143 16.011-.143 24.023 0 1.174-.286 1.587-1.673 1.587-9.05-.065-18.1-.039-27.163-.065-2.859 0-2.888-.039-2.888-2.542l-.043-61.915c0-4.09-.057-8.167-.1-12.256 0-.3-.057-.606-.086-.9-.157-.09-.314-.194-.472-.284-3.488 3.251-6.919 6.554-10.479 9.741q-22.538 20.146-45.148 40.2c-3.431 3.045-2.573 2.967-5.962-.052q-32.6-29.067-65.106-58.225c-6.476-5.793-13.081-11.457-19.386-17.378-9.564-8.955-15.483-19.6-16.942-32-3.559-30.354 17.056-52.532 41.632-59.873 16.698-4.993 33.382-4.567 49.108 2.709 18.66 8.632 30.609 22.333 34.112 41.264 2.459 13.327-.386 25.932-7.935 37.685-5.075 7.909-12.295 13.869-20.444 19.068a2.5 2.5 0 0 1-3.445-.219C86.281 97.365 79.075 90.94 71.913 84.49a4.135 4.135 0 0 1-.615-.826c3.274-1.509 6.676-2.645 9.507-4.477 10.751-6.971 15.296-16.592 12.638-28.271-2.659-11.637-11.065-18.991-23.842-21.713-17.813-3.793-35.541 7.651-37.557 24.049-1.072 8.8 1.973 16.462 8.892 22.745q19.165 17.359 38.482 34.589 12.309 11.011 24.676 21.958c.214.181.429.348.743.593q45.227-40.407 90.382-80.742c.214.065.429.116.658.181Z"
+                  data-name="Tracé 44" />
+                <path fill="#e7c06a"
+                  d="M.52 102.769c2.15 2.079 4.315 4.129 6.436 6.238q12.393 12.431 24.712 24.921a3.932 3.932 0 0 1 .928 2.45q.044 31.366-.015 62.717c0 3.549.368 3.074-3.048 3.089-8.836 0-17.657 0-26.494-.045-3.019 0-3.034-.045-3.034-3v-96.207c.177-.059.353-.1.53-.163Z"
+                  data-name="Tracé 45" />
+              </svg>
+            </div>
+
+            <div class="div-futur3 reveal">
+
+
+              <svg class="guillemet" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 88.2 77.4">
+                <g style="isolation:isolate">
+                  <path
+                    d="M0 77.4V44.1c0-6 .65-11.65 1.95-16.95 1.3-5.3 3.3-9.95 6-13.95S14.1 6 18.3 3.6C22.5 1.2 27.4 0 33 0v15c-3.4 0-6.2.85-8.4 2.55-2.2 1.7-4 3.95-5.4 6.75-1.4 2.8-2.35 5.95-2.85 9.45-.5 3.5-.75 6.95-.75 10.35h17.7v33.3H0Zm54.9 0V44.1c0-6 .65-11.65 1.95-16.95 1.3-5.3 3.3-9.95 6-13.95S69 6 73.2 3.6C77.4 1.2 82.3 0 87.9 0v15c-3.4 0-6.2.85-8.4 2.55-2.2 1.7-4 3.95-5.4 6.75-1.4 2.8-2.35 5.95-2.85 9.45-.5 3.5-.75 6.95-.75 10.35h17.7v33.3H54.9Z"
+                    style="fill:#da5d39" />
+                </g>
+              </svg>
+              <div>
+                <p class="pub1">Êtes-vous fatigué de vous retrouver bloqué lors de vos sorties
+                  en famille à cause d'un arbre qui obstrue votre chemin ? Ou peut-être que vous avez été confronté à un
+                  sentier fermé pour la chasse&#8239;?</p>
+                <p class="p-futur">Ne laissez plus ces obstacles vous gâcher vos moments de détente en plein air&#8239;!
+                  Grâce à
+                  notre
+                  application, vous pouvez savoir en temps réel si les sentiers que vous souhaitez emprunter sont
+                  accessibles
+                  ou
+                  non.
+                  Imaginez une randonnée en famille sans stress ni frustration. Une promenade dans la nature où vous
+                  pouvez
+                  profiter pleinement de chaque instant ensemble. Avec notre application, c'est possible&#8239;!
+                  Rejoignez-nous dès maintenant et explorez le monde avec votre famille en toute sérénité&#8239;!
+                </p>
+              </div>
+              <svg class="guillemet" xmlns="http://www.w3.org/2000/svg" xml:space="preserve"
+                style="enable-background:new 0 0 88.2 77.4" viewBox="0 0 88.2 77.4">
+                <path
+                  d="M88.2 0v33.3c0 6-.6 11.7-1.9 17-1.3 5.3-3.3 10-6 14s-6.1 7.2-10.3 9.6c-4.2 2.4-9.1 3.6-14.7 3.6v-15c3.4 0 6.2-.9 8.4-2.6 2.2-1.7 4-4 5.4-6.8 1.4-2.8 2.3-6 2.8-9.5s.7-7 .7-10.4H54.9V-.1c0 .1 33.3.1 33.3.1zM33.3 0v33.3c0 6-.6 11.7-1.9 17-1.3 5.3-3.3 10-6 14s-6.1 7.2-10.3 9.6C10.9 76.3 6 77.5.4 77.5v-15c3.4 0 6.2-.9 8.4-2.6 2.2-1.7 4-4 5.4-6.8s2.3-6 2.8-9.5.7-7 .7-10.4L0 33.3V0h33.3z"
+                  style="fill:#da5d39" />
+              </svg>
+
+            </div>
+
+
+
+            <section class="section-conclusion">
+              <span class="km">KM6</span>
+              <div class="conclusion">
+
+                <h2 class="title title-sec title-conclusion">Le dernier kilomètre</h2>
+
+                <p class="p--conclusion"> En résumé, Pathmate est une idée d’application mobile qui j’espère, facilitera
+                  la vie des utilisateurs de sentiers boisés et campagnards. Ce projet m'a donc énormément motivé car si
+                  j'arrive à mener à bien cette idée,
+                  notamment pendant ma
+                  troisième
+                  année, je sais que je pourrai aider de nombreuses personnes à profiter des bois en toute sécurité, y
+                  compris
+                  moi-même.</p>
+              </div>
+            </section>
+          </section>
+        </section>
 
       </div>
-
-      <div class="swiper-container swiper-container-fonc mySwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide swiper-fonc">
-            <img class="fonc-logo" src="assets/images/emotearbre.svg" alt="">
-            <h3 class="h4-fonc">Obstacle sur le chemin</h3>
-            <p>Si le promeneur rencontre un arbre tombé en travers du chemin, une branche cassée, une pierre qui bloque
-              le passage ou tout autre obstacle.</p>
-          </div>
-          <div class="swiper-slide swiper-fonc">
-            <img class="fonc-logo" src="assets/images/falaise.svg" alt="">
-            <h3 class="h4-fonc">Zone à risque</h3>
-            <p>Si le promeneur repère des zones potentiellement dangereuses comme des falaises, des zones à risque
-              d'avalanche ou des zones où il y a un risque de glissement de terrain, il peut également signaler ces
-              zones pour avertir les autres utilisateurs de l'application.</p>
-          </div>
-          <div class="swiper-slide swiper-fonc">
-            <img class="fonc-logo" src="assets/images/chasse.svg" alt="">
-            <h3 class="h4-fonc">La chasse</h3>
-            <p>Si le promeneur constate que les chemins sont fermés à cause de la chasse, il peut l’indiquer aux autres
-              utilisateurs. Cela pourrait notamment éviter les accidents.</p>
-          </div>
-          <div class="swiper-slide swiper-fonc">
-            <img class="fonc-logo" src="assets/images/boue.svg" alt="">
-            <h3 class="h4-fonc">État du chemin</h3>
-            <p>Si le chemin est boueux, glissant ou difficile à traverser, le promeneur peut signaler cette information
-              aux autres utilisateurs de l'application pour qu'ils soient prêts et équipés en conséquence ou bien qu’ils
-              adaptent leurs itinéraires.</p>
-          </div>
-          <div class="swiper-slide swiper-fonc">
-            <img class="fonc-logo" src="assets/images/animaux.svg" alt="">
-            <h3 class="h4-fonc">Présence d'animaux</h3>
-            <p>Si le promeneur remarque la présence d'animaux sauvages, comme des sangliers, il peut signaler cette
-              information aux autres utilisateurs pour leur sécurité.</p>
-          </div>
-          <div class="swiper-slide swiper-fonc">
-            <img class="fonc-logo" src="assets/images/ferme.svg" alt="">
-            <h3 class="h4-fonc">Chemin fermé</h3>
-            <p>Si le promeneur constate qu’un chemin initialement ouvert à tous est fermé pour une quelconque raison, il
-              peut le signaler.</p>
-          </div>
-          <div class="swiper-slide swiper-fonc">
-            <img class="fonc-logo" src="assets/images/lieu.svg" alt="">
-            <h3 class="h4-fonc">Point d'intérêt</h3>
-            <p>Si le promeneur découvre des points d'intérêt tels que des points de vue, des cascades ou des lacs, il
-              peut partager ces informations pour permettre aux autres utilisateurs de profiter pleinement de leur
-              expérience de la nature.</p>
-          </div>
-
-        </div>
-        <div class="swiper-pagination"></div>
-      </div>
-
-      <script>
-        var swiper = new Swiper(".mySwiper", {
-          effect: "coverflow",
-          grabCursor: true,
-          centeredSlides: true,
-          slidesPerView: "auto",
-          coverflowEffect: {
-            rotate: 50,
-            stretch: 0,
-            depth: 100,
-            modifier: 1,
-            slideShadows: false,
-          },
-          pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-          },
-        });
-      </script>
-
-
-
-      <div class="fond-fonc2">
-        <p class="p-fonc1">Il sera donc possible de fournir une indication à l’endroit même où nous nous trouvons
-          à ce
-          moment ou bien pour une zone complète, comme pour les chasses. Cela dépendra de l’élément à signaler.
-        </p>
-        <p class="p-fonc2"><strong> Ces signalements aideront la communauté à rendre les bois et campagnes plus
-            sûr et
-            agréables pour tous. </strong></p>
-
-      </div>
-    </div>
-
-
-    <div class="section-passe">
-
-      <span id="passe" class="km">KM4</span>
-      <h2 class="title title-sec title-pass">Une explication du passé</h2>
-
-      <div class="grid-passe">
-        <p class="p-passe-1">Je vais revenir au début du projet, aux prémices, pour expliquer pourquoi j'ai choisi
-          la
-          catégorie
-          d'utilisateurs des vététistes. J'ai pris cette décision car je fais partie de cette communauté et que je
-          rencontre souvent des problèmes lors de mes sorties. J'ai donc réalisé qu'il y avait de nombreux défis à
-          relever
-          dans ce domaine. Au début, je suis resté trop attaché à mon idée de base, ce qui n'était pas bon et n'a
-          pas
-          porté ses fruits car je devais d’abord me concentrer sur les problèmes des autres utilisateurs.
-        </p>
-
-        <p>Cependant, grâce aux entretiens que j'ai menés avec les vététistes et aux problèmes qu'ils m'ont décrits,
-          j'ai
-          eu l'idée de créer l'application PathMate. La suite du développement de l'idée a été plus simple pour moi
-          car
-          je
-          "connais" ou du moins pense connaître les envies et besoins des vététistes pour améliorer ces problèmes.
-          Mes
-          utilisateurs ce sont d’ailleurs élargis car je pense que l’application pourrait être bénéfique à tout le
-          monde.
-        </p>
-
-        <p> Ce projet m'a donc énormément motivé car si j'arrive à mener à bien cette idée, notamment pendant ma
-          troisième
-          année, je sais que je pourrai aider de nombreuses personnes à profiter des bois en toute sécurité, y
-          compris
-          moi-même.</p>
-
-        <img class="reveal" src="assets/images/IMG_5871.jpg" srcset="assets/images/IMG_5871@2x.jpg 2x"
-          alt="Photo de deux cycliste entrain de préparer leurs vélos">
-      </div>
-    </div>
-
-    <div class="div-futur">
-
-      <span class="km">KM5</span>
-
-      <div class="div-futur-2">
-        <div>
-          <h2 class="title title-sec">Une idée pour le futur</h2>
-
-          <p>Pour notre projet, nous devons parler en notre personne pour décrire nos idées et recherches, mais j’ai
-            imaginé
-            un instant que l’application était déjà en ligne et que je devais convaincre des utilisateurs. Voici un
-            extrait
-            qui pourrait servir de pub ou sur le site de présentation de la (peut-être) future application&nbsp;:</p>
-        </div>
-
-        <svg class="logoPM" xmlns="http://www.w3.org/2000/svg">
-          <path fill="#004f2d"
-            d="M195.863 52.58v3.458l.129 117.223c0 8.012-.143 16.011-.143 24.023 0 1.174-.286 1.587-1.673 1.587-9.05-.065-18.1-.039-27.163-.065-2.859 0-2.888-.039-2.888-2.542l-.043-61.915c0-4.09-.057-8.167-.1-12.256 0-.3-.057-.606-.086-.9-.157-.09-.314-.194-.472-.284-3.488 3.251-6.919 6.554-10.479 9.741q-22.538 20.146-45.148 40.2c-3.431 3.045-2.573 2.967-5.962-.052q-32.6-29.067-65.106-58.225c-6.476-5.793-13.081-11.457-19.386-17.378-9.564-8.955-15.483-19.6-16.942-32-3.559-30.354 17.056-52.532 41.632-59.873 16.698-4.993 33.382-4.567 49.108 2.709 18.66 8.632 30.609 22.333 34.112 41.264 2.459 13.327-.386 25.932-7.935 37.685-5.075 7.909-12.295 13.869-20.444 19.068a2.5 2.5 0 0 1-3.445-.219C86.281 97.365 79.075 90.94 71.913 84.49a4.135 4.135 0 0 1-.615-.826c3.274-1.509 6.676-2.645 9.507-4.477 10.751-6.971 15.296-16.592 12.638-28.271-2.659-11.637-11.065-18.991-23.842-21.713-17.813-3.793-35.541 7.651-37.557 24.049-1.072 8.8 1.973 16.462 8.892 22.745q19.165 17.359 38.482 34.589 12.309 11.011 24.676 21.958c.214.181.429.348.743.593q45.227-40.407 90.382-80.742c.214.065.429.116.658.181Z"
-            data-name="Tracé 44" />
-          <path fill="#e7c06a"
-            d="M.52 102.769c2.15 2.079 4.315 4.129 6.436 6.238q12.393 12.431 24.712 24.921a3.932 3.932 0 0 1 .928 2.45q.044 31.366-.015 62.717c0 3.549.368 3.074-3.048 3.089-8.836 0-17.657 0-26.494-.045-3.019 0-3.034-.045-3.034-3v-96.207c.177-.059.353-.1.53-.163Z"
-            data-name="Tracé 45" />
-        </svg>
-      </div>
-
-      <div class="div-futur3 reveal">
-
-
-        <svg class="guillemet" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 88.2 77.4">
-          <g style="isolation:isolate">
-            <path
-              d="M0 77.4V44.1c0-6 .65-11.65 1.95-16.95 1.3-5.3 3.3-9.95 6-13.95S14.1 6 18.3 3.6C22.5 1.2 27.4 0 33 0v15c-3.4 0-6.2.85-8.4 2.55-2.2 1.7-4 3.95-5.4 6.75-1.4 2.8-2.35 5.95-2.85 9.45-.5 3.5-.75 6.95-.75 10.35h17.7v33.3H0Zm54.9 0V44.1c0-6 .65-11.65 1.95-16.95 1.3-5.3 3.3-9.95 6-13.95S69 6 73.2 3.6C77.4 1.2 82.3 0 87.9 0v15c-3.4 0-6.2.85-8.4 2.55-2.2 1.7-4 3.95-5.4 6.75-1.4 2.8-2.35 5.95-2.85 9.45-.5 3.5-.75 6.95-.75 10.35h17.7v33.3H54.9Z"
-              style="fill:#da5d39" />
-          </g>
-        </svg>
-        <div>
-          <p class="pub1">Êtes-vous fatigué de vous retrouver bloqué lors de vos sorties
-            en famille à cause d'un arbre qui obstrue votre chemin ? Ou peut-être que vous avez été confronté à un
-            sentier fermé pour la chasse&#8239;?</p>
-          <p class="p-futur">Ne laissez plus ces obstacles vous gâcher vos moments de détente en plein air&#8239;!
-            Grâce à
-            notre
-            application, vous pouvez savoir en temps réel si les sentiers que vous souhaitez emprunter sont
-            accessibles
-            ou
-            non.
-            Imaginez une randonnée en famille sans stress ni frustration. Une promenade dans la nature où vous pouvez
-            profiter pleinement de chaque instant ensemble. Avec notre application, c'est possible&#8239;!
-            Rejoignez-nous dès maintenant et explorez le monde avec votre famille en toute sérénité&#8239;!
-          </p>
-        </div>
-        <svg class="guillemet" xmlns="http://www.w3.org/2000/svg" xml:space="preserve"
-          style="enable-background:new 0 0 88.2 77.4" viewBox="0 0 88.2 77.4">
-          <path
-            d="M88.2 0v33.3c0 6-.6 11.7-1.9 17-1.3 5.3-3.3 10-6 14s-6.1 7.2-10.3 9.6c-4.2 2.4-9.1 3.6-14.7 3.6v-15c3.4 0 6.2-.9 8.4-2.6 2.2-1.7 4-4 5.4-6.8 1.4-2.8 2.3-6 2.8-9.5s.7-7 .7-10.4H54.9V-.1c0 .1 33.3.1 33.3.1zM33.3 0v33.3c0 6-.6 11.7-1.9 17-1.3 5.3-3.3 10-6 14s-6.1 7.2-10.3 9.6C10.9 76.3 6 77.5.4 77.5v-15c3.4 0 6.2-.9 8.4-2.6 2.2-1.7 4-4 5.4-6.8s2.3-6 2.8-9.5.7-7 .7-10.4L0 33.3V0h33.3z"
-            style="fill:#da5d39" />
-        </svg>
-
-      </div>
-
     </div>
     </div>
   </main>
