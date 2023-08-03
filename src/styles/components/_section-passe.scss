@@ -46,9 +46,9 @@
             position: relative;
             top: 50px;
             border-radius: 25px;
-            margin-inline-start: 5%;
-            margin-inline-end: 5%;
-            width: 90%;
+            margin-inline-start: 9%;
+            margin-inline-end: 9%;
+            width: 80%;
             height: 450px;
             margin-top: 25px;
         }
@@ -78,6 +78,7 @@
             opacity: 80%;
         }
     }
+
     .section-passe .p-passe-1 {
         grid-column: 1 / 1;
         grid-row: 1 / 2;
@@ -118,6 +119,7 @@
     .section-passe {
         img {
             width: 90%;
+            height: 80%;
         }
     }
 }
@@ -132,8 +134,8 @@
         margin-right: auto;
         margin-top: -200px;
         margin-bottom: 50px;
-        width: 115%;
-        height: 130%;
+        width: 110%;
+        height: 133%;
     }
 }
 
@@ -160,7 +162,7 @@
         margin-right: auto;
         margin-top: -300px;
         margin-bottom: 0px;
-        width: 130%;
+        width: 120%;
         height: 150%;
     }
 }
