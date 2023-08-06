@@ -5,21 +5,18 @@
   height: 100%;
   overflow: hidden;
   z-index: 1;
-
 }
 
 .swiper-wrapper {
   margin: O;
 }
 
-
-
 .swiper-slide {
   max-width: 85%;
   height: 240px;
-  background-color: #FFFCF5;
+  background-color: #fffcf5;
   border-radius: 25px;
-  box-shadow: #CCB67A 10px 10px 10px;
+  box-shadow: #ccb67a 10px 10px 10px;
   margin-inline-start: 7.5%;
   margin-inline-end: 7.5%;
 
@@ -33,7 +30,7 @@
     font-weight: 500;
     font-style: normal;
     font-size: 23px;
-    color: #004F2D;
+    color: #004f2d;
     display: flex;
     justify-content: center;
   }
@@ -45,18 +42,18 @@
   margin-bottom: 25px;
   max-width: 80%;
   height: 350px;
-  background-color: #FFFCF5;
+  background-color: #fffcf5;
   border-radius: 25px;
   display: block;
   align-items: center;
-  box-shadow: #CCB67A 3px 3px 3px;
+  box-shadow: #ccb67a 3px 3px 3px;
 
   h4 {
     font-family: "kallisto", sans-serif;
     font-weight: 500;
     font-style: normal;
     font-size: 23px;
-    color: #004F2D;
+    color: #004f2d;
     display: flex;
     justify-content: center;
     margin-top: 15px;
@@ -67,9 +64,7 @@
     margin-left: 15px;
     margin-right: 15px;
   }
-
 }
-
 
 .vignette-slider img {
   width: 100%;
@@ -77,8 +72,6 @@
   border-radius: 15px;
   z-index: -2;
 }
-
-
 
 .vignette--fonc {
   height: 350px;
@@ -92,14 +85,12 @@
   }
 }
 
-
 .logo-strava {
   position: absolute;
-
 }
 
 a {
-  text-decoration: none
+  text-decoration: none;
 }
 
 .contenaire {
@@ -118,20 +109,20 @@ a {
   max-width: 85%;
   max-width: 325px;
   height: 400px;
-  background-color: #FFFCF5;
+  background-color: #fffcf5;
   border-radius: 25px;
   display: block;
   align-items: center;
   margin-right: auto;
   margin-left: auto;
-  box-shadow: #CCB67A 3px 3px 3px;
+  box-shadow: #ccb67a 3px 3px 3px;
 
   h4 {
     font-family: "kallisto", sans-serif;
     font-weight: 500;
     font-style: normal;
     font-size: 23px;
-    color: #004F2D;
+    color: #004f2d;
     display: flex;
     justify-content: center;
     margin-top: 15px;
@@ -142,9 +133,7 @@ a {
     margin-left: 15px;
     margin-right: 15px;
   }
-
 }
-
 
 .vignette2 img {
   width: 100%;
@@ -152,7 +141,6 @@ a {
   border-radius: 15px;
   z-index: -2;
 }
-
 
 .carte2 {
   border-radius: 5px;
@@ -162,7 +150,7 @@ a {
 .carte2 img {
   max-width: 100%;
   transition: all 1.4s ease;
-  box-shadow: #CCB67A 2px 2px 2px;
+  box-shadow: #ccb67a 2px 2px 2px;
 }
 
 .carte2:hover img {
@@ -170,24 +158,23 @@ a {
   border-radius: 15px;
 }
 
-
 .vignette {
   margin-left: 30px;
   margin-right: 30px;
   max-width: 90%;
   height: 260px;
-  background-color: #FFFCF5;
+  background-color: #fffcf5;
   border-radius: 25px;
   display: block;
   align-items: center;
-  box-shadow: #CCB67A 3px 3px 3px;
+  box-shadow: #ccb67a 3px 3px 3px;
 
   h4 {
     font-family: "kallisto", sans-serif;
     font-weight: 500;
     font-style: normal;
     font-size: 23px;
-    color: #004F2D;
+    color: #004f2d;
     display: flex;
     justify-content: center;
     margin-top: 30px;
@@ -198,7 +185,6 @@ a {
   }
 }
 
-
 @media (min-width: 600px) {
   .fleche-swiper {
     width: 70%;
@@ -207,7 +193,6 @@ a {
 
   .swiper-container {
     max-width: 50%;
-
   }
 
   .swiper-slide {
@@ -221,7 +206,7 @@ a {
       font-weight: 500;
       font-style: normal;
       font-size: 23px;
-      color: #004F2D;
+      color: #004f2d;
       display: flex;
       justify-content: center;
     }
@@ -251,7 +236,6 @@ a {
       margin-left: 30px;
       margin-right: 30px;
     }
-
   }
 
   .vignette {
@@ -263,9 +247,7 @@ a {
       font-size: 26px;
     }
   }
-
 }
-
 
 @media (min-width: 800px) {
   .contenaire {
@@ -282,7 +264,6 @@ a {
       margin-left: auto;
       margin-right: auto;
     }
-
   }
 
   .contenaire div:nth-child(1) {
@@ -292,12 +273,9 @@ a {
   .contenaire div:nth-child(2) {
     grid-column: 2 / 3;
   }
-
-
 }
 
 @media (min-width: 1024px) {
-
   .section-idee {
     display: flex;
     justify-content: space-around;
@@ -372,7 +350,7 @@ a {
       font-weight: 500;
       font-style: normal;
       font-size: 23px;
-      color: #004F2D;
+      color: #004f2d;
       display: flex;
       justify-content: center;
     }
@@ -403,16 +381,12 @@ a {
   }
 }
 
-
 @media (min-width: 1200px) {
-
   .contenaire .vignette2 {
-
     width: 425px;
   }
 
   .section-comp {
-
     .section-comp-p {
       margin-top: 50px;
       margin-right: 0px;
@@ -421,7 +395,6 @@ a {
       max-width: 300px;
     }
   }
-
 }
 
 @media (min-width: 1300px) {
@@ -434,9 +407,7 @@ a {
   }
 }
 
-
 @media (min-width: 1400px) {
-
   .fond-idee {
     .title-sec {
       padding-left: 100px;
@@ -480,7 +451,7 @@ a {
       font-weight: 500;
       font-style: normal;
       font-size: 23px;
-      color: #004F2D;
+      color: #004f2d;
       display: flex;
       justify-content: center;
     }
@@ -502,9 +473,7 @@ a {
   }
 }
 
-
 @media (min-width: 1800px) {
-
   .section-idee {
     padding-left: 100px;
 
@@ -514,7 +483,6 @@ a {
   }
 
   .swiper-container {
-
     .swiper-slide {
       max-width: 23%;
       height: 400px;

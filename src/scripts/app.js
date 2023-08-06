@@ -11,7 +11,7 @@ gsap.registerPlugin(ScrollTrigger);
 const burgerButton = document.querySelector(".burger");
 const menu = document.querySelector(".nav__menu");
 const navLinks = document.querySelectorAll(".nav__lien");
-const menuItems = document.querySelectorAll('.nav__el');
+const menuItems = document.querySelectorAll('.nav__menu-item');
 
 function toggleMenu() {
   menu.classList.toggle("switch");
@@ -44,17 +44,16 @@ animateMenuItems();
 
 
 window.addEventListener('DOMContentLoaded', function () {
-  const menuItems = document.querySelectorAll('.nav__menu .nav__el a');
+  const menuItems = document.querySelectorAll('.nav__menu .nav__menu-item a');
 
   function handleScroll() {
     const sections = document.querySelectorAll('section');
-    // Remplacez 'section' par le sélecteur de vos sections
     const currentScroll = window.scrollY;
 
     let currentSectionId = null;
 
     sections.forEach(section => {
-      const sectionTop = section.offsetTop - 100; // Pour ajuster le déclenchement du changement de section (optionnel)
+      const sectionTop = section.offsetTop - 100;
       const sectionBottom = sectionTop + section.offsetHeight;
 
       if (currentScroll >= sectionTop && currentScroll < sectionBottom) {
@@ -62,25 +61,16 @@ window.addEventListener('DOMContentLoaded', function () {
       }
     });
 
-
-
-    // Mettre à jour la classe 'actif' sur le lien du menu correspondant à la section active
     menuItems.forEach(item => {
-      item.classList.remove('actif');
+      item.classList.remove('nav__lien--active');
       if (item.getAttribute('href') === `#${currentSectionId}`) {
-        item.classList.add('actif');
+        item.classList.add('nav__lien--active');
       }
     });
   }
 
-  // Appeler la fonction handleScroll lors du défilement de la page
   window.addEventListener('scroll', handleScroll);
 });
-
-
-
-
-
 
 const smoothLinks = document.querySelectorAll('.smooth-link');
 
@@ -99,82 +89,17 @@ function smoothScroll(e) {
 }
 
 
-
-
-/*if (document.getElementById("cookiePopup")) {
-
-  if (!getCookie("popupAccepted")) {
-
-    function showPopup() {
-      var popup = document.getElementById("cookiePopup");
-      popup.style.display = "block";
-    }
-
-    setTimeout(showPopup, 1500);
-
-    var acceptBtn = document.getElementById("acceptBtn");
-    var rejectBtn = document.getElementById("rejectBtn");
-
-    acceptBtn.addEventListener("click", acceptCookies);
-    rejectBtn.addEventListener("click", rejectCookies);
-  }
-}
-
-function acceptCookies() {
-  document.getElementById("cookiePopup").style.display = "none";
-  setCookie("popupAccepted", true, 365);
-  console.log("Cookies acceptés !");
-}
-
-function rejectCookies() {
-  document.getElementById("cookiePopup").style.display = "none";
-
-  console.log("Cookies rejetés !");
-}
-
-
-function setCookie(name, value, days) {
-  var expires = "";
-  if (days) {
-    var date = new Date();
-    date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
-    expires = "; expires=" + date.toUTCString();
-  }
-  document.cookie = name + "=" + (value || "") + expires + "; path=/";
-}
-
-
-function getCookie(name) {
-  var nameEQ = name + "=";
-  var cookies = document.cookie.split(";");
-  for (var i = 0; i < cookies.length; i++) {
-    var cookie = cookies[i];
-    while (cookie.charAt(0) === " ") {
-      cookie = cookie.substring(1, cookie.length);
-    }
-    if (cookie.indexOf(nameEQ) === 0) {
-      return cookie.substring(nameEQ.length, cookie.length);
-    }
-  }
-  return null;
-}*/
-
-
-
-
-gsap.to(".para-gauche", {
+gsap.to(".grid-besoin__para-gauche", {
 
   scrollTrigger: {
     pin: ".pin",
-    trigger: ".para-gauche",
+    trigger: ".grid-besoin__para-gauche",
     start: "-100px top",
-    endTrigger: ".para-droite",
+    endTrigger: ".grid-besoin__para-droite",
     end: "bottom 70%",
     toggleActions: "play none play none"
   },
 });
-
-
 
 function reveal() {
   var reveals = document.querySelectorAll(".reveal");
@@ -190,7 +115,6 @@ function reveal() {
       reveals[i].classList.remove("act");
     }
 
-    // Ajoute la classe .revealed une fois que l'élément est révélé
     if (reveals[i].classList.contains("act")) {
       reveals[i].classList.add("revealed");
     }
@@ -198,12 +122,6 @@ function reveal() {
 }
 
 window.addEventListener("scroll", reveal);
-
-
-
-
-
-
 
 const swiper = new Swiper('.swiper-container', {
   slidesPerView: 1,
@@ -220,18 +138,6 @@ const swiper = new Swiper('.swiper-container', {
 });
 
 
-// Get the bike container element
-/*const bikeContainer = document.getElementById("bikeContainer");
-
-// Function to handle the scroll event
-function handleScroll() {
-  // Calculate the offset based on the scroll position and adjust the bike's position
-  const scrollOffset = window.scrollY;
-  bikeContainer.style.left = scrollOffset + "px";
-}
-
-// Attach the scroll event listener to the window
-window.addEventListener("scroll", handleScroll);*/
 
 function isElementInViewport(el) {
   const rect = el.getBoundingClientRect();
@@ -243,7 +149,6 @@ function isElementInViewport(el) {
   );
 }
 
-// Fonction pour ajouter la classe "highlight" aux éléments visibles lors du scroll
 function handleScrollAnimation() {
   const highlightedElements = document.querySelectorAll(".highlight-once");
 
@@ -254,9 +159,7 @@ function handleScrollAnimation() {
   });
 }
 
-// Attendre que le contenu de la page soit chargé
 document.addEventListener("DOMContentLoaded", function () {
-  // Lancer l'animation au scroll
   window.addEventListener("scroll", handleScrollAnimation);
 });
 
